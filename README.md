@@ -16,7 +16,7 @@
 # What is working?
 
 Almost everything:
-- MacOS Ventura 13.1 Update
+- MacOS Ventura 13.1 Update (set up the hack on 13.0.1)
 - Audio
 - DP and HDMI via dGBPU
 - DRM Content (Netflix, Amazon Prime, Apple TV+)
