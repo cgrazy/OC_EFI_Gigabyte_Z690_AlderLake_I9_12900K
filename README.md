@@ -1,4 +1,7 @@
-# OpenCoreEFI
+# OpenCore EFI
+
+![About This Mac](./images/AboutThisMac.jpg "About This Mac")
+
 
  OpenCore EFI for Intel Alder Lake
 
