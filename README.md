@@ -11,6 +11,8 @@
 - 64 GB DDR4-3000
 - Wifi/BT via BRCM20702
 
+- OC Version 0.8.7
+
 # What is working?
 
 Almost everything:
