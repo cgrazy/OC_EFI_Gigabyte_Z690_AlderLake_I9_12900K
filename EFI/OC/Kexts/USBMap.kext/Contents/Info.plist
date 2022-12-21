@@ -46,6 +46,33 @@
 				<data>GQAAAA==</data>
 				<key>ports</key>
 				<dict>
+					<key>HS04</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>Comment</key>
+						<string>Back, USB 2.0 an USB 3.1 (USB-C)</string>
+						<key>port</key>
+						<data>BAAAAA==</data>
+					</dict>
+					<key>HS05</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>Comment</key>
+						<string>Back, USB 2.0 an USB 3.1 Ethernet links</string>
+						<key>port</key>
+						<data>BQAAAA==</data>
+					</dict>
+					<key>HS06</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>Comment</key>
+						<string>Back, USB 2.0 an USB 3.1 Ethernet rechts</string>
+						<key>port</key>
+						<data>BgAAAA==</data>
+					</dict>
 					<key>HS11</key>
 					<dict>
 						<key>UsbConnector</key>
