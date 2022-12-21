@@ -23,7 +23,7 @@ Almost everything:
 - Wifi/BT out of the box
 - all iServices (iMessage, iCloud, AirDrop, unlock with Apple Watch)
 - CPU temperature and fan speeds in iStats and/or Intel Power Gadget
-- USB Ports mapped: 15 in use out of 20 possibly available
+- USB Ports mapped: 15 in use out of 21 possibly available
   - 2x USB 2.0 on the front panel via internal USB header (one port in USB mapping)
   - 4x USB 2.0 on the back (one port in USB mapping)
   - 1x RGB Fusion 2.0
