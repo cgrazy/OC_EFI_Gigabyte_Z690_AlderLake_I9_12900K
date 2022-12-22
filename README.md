@@ -39,7 +39,9 @@ Usually the hack boots as expected, but sometimes it stucks at the apple logo w/
 
 # Current State?
 
-~~ACPI Patches introduced according to guide 2 for Gigabyte Z690 mainboards since neither mouse nor keyboard were working and restart of the whole system was needed. Has to be observed further if Sleep has killed USB functionality. Currently booting is possible w/ just a small issue, the additionally connected USB-Keyboard is not working, unless USB-C is disconnected while boot.~~ 
+~~ACPI Patches introduced according to guide 2 for Gigabyte Z690 mainboards since neither mouse nor keyboard were working and restart of the whole system was needed. Has to be observed further if Sleep has killed USB functionality.~~ 
+
+Currently booting is possible w/ just a small issue, the additionally connected USB-Keyboard is not working, unless USB-C is disconnected while boot.
 
 At the moment I'm being quite satisfied with the system. Added GPRW renaming to improve S3 handling. Needs some more testing.
 
