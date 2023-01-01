@@ -18,7 +18,7 @@
 Almost everything:
 - MacOS Ventura 13.1 Update (set up the hack on 13.0.1)
 - Audio
-- DP and HDMI via dGBPU
+- DP and HDMI via dGPU
 - DRM Content (Netflix, Amazon Prime, Apple TV+)
 - Wifi/BT out of the box
 - all iServices (iMessage, iCloud, AirDrop, unlock with Apple Watch)
@@ -27,21 +27,22 @@ Almost everything:
   - 2x USB 2.0 on the front panel via internal USB header (one port in USB mapping)
   - 4x USB 2.0 on the back (one port in USB mapping)
   - 1x RGB Fusion 2.0
-  - 2x USB 3.1 Gen 2 on the front via internal USB header
-  - 5x USB 3.1 Gen 2 on the back   
+  - 2x USB 3.2 Gen 1 on the front via internal USB header
+  - 2x USB 3.2 Gen 2 on the back
+  - 3x USB 3.2 Gen 1 on the back   
 	- 3x with USB 2.0 personality
-  - 2x USB-C (each on back/front)
+  - 2x USB-C (one back and front with up to 10 Gbps)
 - Continuity Camera with iPhone 14 Pro
 
 # What doesn't work well?
 
-Usually the hack boots as expected, but sometimes it stucks at the apple logo w/o any progress bar. So rebooting via Reset button is needed. Currently I've no clue why that is happening.
+~~Usually the hack boots as expected, but sometimes it stucks at the apple logo w/o any progress bar. So rebooting via Reset button is needed. Currently I've no clue why that is happening.~~ 
 
 # Current State?
 
 ~~ACPI Patches introduced according to guide 2 for Gigabyte Z690 mainboards since neither mouse nor keyboard were working and restart of the whole system was needed. Has to be observed further if Sleep has killed USB functionality.~~ 
 
-Currently booting is possible w/ just a small issue, the additionally connected USB-Keyboard is not working, unless USB-C is disconnected while boot.
+Currently booting is possible w/ just a small issue: ~~the additionally connected USB-Keyboard~~ USB 2.0 (USB legacy mode is enabled in BIOS) seems not to be working, unless USB-C is disconnected before boot, so I guess it's not OC related but more a generell issue.
 
 At the moment I'm being quite satisfied with the system. Added GPRW renaming to improve S3 handling. Needs some more testing.
 
@@ -52,6 +53,8 @@ At the moment I'm being quite satisfied with the system. Added GPRW renaming to 
 
 2. Alder Lake adaptations done according to:  
 [ChrisWayg](https://chriswayg.gitbook.io/opencore-visual-beginners-guide/advanced-topics/using-alder-lake)
+
+Before just copying a config.plist from the internet go through the guids and start from skratch with the sample.plist provided by Dortania by your own.
 
 # Thanks/Credits
 
