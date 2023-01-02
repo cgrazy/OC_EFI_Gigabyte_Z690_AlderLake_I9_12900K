@@ -51,7 +51,7 @@
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>Comment</key>
-						<string>Back, USB 2.0 an USB 3.1 (USB-C)</string>
+						<string>Back, USB 2.0 on USB 3.2 Gen1 (USB-C)</string>
 						<key>port</key>
 						<data>BAAAAA==</data>
 					</dict>
@@ -60,7 +60,7 @@
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>Comment</key>
-						<string>Back, USB 2.0 an USB 3.1 Ethernet links</string>
+						<string>Back, USB 2.0 on USB 3.2 Gen1 Ethernet left</string>
 						<key>port</key>
 						<data>BQAAAA==</data>
 					</dict>
@@ -69,7 +69,7 @@
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>Comment</key>
-						<string>Back, USB 2.0 an USB 3.1 Ethernet rechts</string>
+						<string>Back, USB 2.0 on USB 3.2 Gen1 Ethernet right</string>
 						<key>port</key>
 						<data>BgAAAA==</data>
 					</dict>
@@ -105,7 +105,7 @@
 						<key>UsbConnector</key>
 						<integer>10</integer>
 						<key>Comment</key>
-						<string>Back, USB-C</string>
+						<string>Back, USB-C (3.2 Gen 2x2)</string>
 						<key>port</key>
 						<data>EQAAAA==</data>
 					</dict>
@@ -114,7 +114,7 @@
 						<key>UsbConnector</key>
 						<integer>10</integer>
 						<key>Comment</key>
-						<string>Front, USB-C</string>
+						<string>Front, USB-C (3.2 Gen2)</string>
 						<key>port</key>
 						<data>EgAAAA==</data>
 					</dict>
@@ -123,7 +123,7 @@
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>Comment</key>
-						<string>Back, USB 3.2 (USB-C)</string>
+						<string>Back, USB 3.2 Gen1 (USB-C)</string>
 						<key>port</key>
 						<data>EwAAAA==</data>
 					</dict>
@@ -132,7 +132,7 @@
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>Comment</key>
-						<string>Back, USB3.2 Eth links</string>
+						<string>Back, USB3.2 Gen1 Ethernet left</string>
 						<key>port</key>
 						<data>FAAAAA==</data>
 					</dict>
@@ -141,7 +141,7 @@
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>Comment</key>
-						<string>Back, USB3.2 Eth rechts</string>
+						<string>Back, USB3.2 Gen1 Ethernet right</string>
 						<key>port</key>
 						<data>FQAAAA==</data>
 					</dict>
@@ -150,7 +150,7 @@
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>Comment</key>
-						<string>Back, USB3.2 1. Reihe links rot</string>
+						<string>Back, USB3.2 Gen 2, 1. Row left red</string>
 						<key>port</key>
 						<data>FgAAAA==</data>
 					</dict>
@@ -159,7 +159,7 @@
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>Comment</key>
-						<string>Back, USB3.2 1. Reihe rechts rot</string>
+						<string>Back, USB3.2 Gen 2, 1. Row right red</string>
 						<key>port</key>
 						<data>FwAAAA==</data>
 					</dict>
@@ -168,7 +168,7 @@
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>Comment</key>
-						<string>Front, USB3.2 links</string>
+						<string>Front, USB3.2 Gen1 left</string>
 						<key>port</key>
 						<data>GAAAAA==</data>
 					</dict>
@@ -177,7 +177,7 @@
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>Comment</key>
-						<string>Front, USB3.2 rechts</string>
+						<string>Front, USB3.2 Gen1 right</string>
 						<key>port</key>
 						<data>GQAAAA==</data>
 					</dict>
