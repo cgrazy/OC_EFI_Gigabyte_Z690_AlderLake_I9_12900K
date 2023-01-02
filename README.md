@@ -5,12 +5,13 @@
 
  OpenCore EFI for Intel Alder Lake
 
-- Intel i9-12900K
-- Gigabyte Z690 Aorus Elite DDR4 AX
-- AMD Radeon RX 580 dGPU
-- 64 GB DDR4-3000
+- Intel i9-12900K (All cores (P+E+HT) activated)
+- Gigabyte Z690 Aorus Elite DDR4 AX (BIOS version F21)
+- AMD Radeon RX 580 8GB dGPU
+- 64 GB DDR4-3000, XMP enabled
 - Wifi/BT via BRCM20702
-
+- Windows 10 on a 2nd SSD
+- MacOS Ventura 13.0.1 on a 3rd SSD
 - [OC Version 0.8.8](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.8.8)
 
 # What is working?
@@ -19,8 +20,10 @@ Almost everything:
 - MacOS Ventura 13.1 Update (set up the hack on 13.0.1)
 - Audio
 - DP and HDMI via dGPU
+	- Screen 1: 4k via DP
+	- Screen 2: 1080p via HDMI
 - DRM Content (Netflix, Amazon Prime, Apple TV+)
-- Wifi/BT out of the box
+- Wifi/BT workingout of the box
 - all iServices (iMessage, iCloud, AirDrop, unlock with Apple Watch)
 - CPU temperature and fan speeds in iStats and/or Intel Power Gadget
 - USB Ports mapped: 15 in use out of 21 possibly available
@@ -51,6 +54,11 @@ Almost everything:
 | [RadeonSensor](https://github.com/aluveitie/RadeonSensor/releases/tag/0.3.1) | 0.3.1 |
 | [RestrictEvents](https://github.com/acidanthera/RestrictEvents/releases/tag/1.0.9) | 1.0.9 | 
 
+# Motivation?
+
+I set up my first hack based on a **AMD Ryzen 9 3900X** and a **Gigabyte X570 Aorus Elite** mainboard. After having the USB mapped as expected, that hack was working well over the years. Survived the updates to Monterey and Ventura w/o issues. But with Venturae more and more software was not working any longer. So, I was running into more issues with **Photoshop** and **Virtualbox** was not working any longer at all. Especially Virtualbox was needed to get UEFI Secure Boot working since Unix was needed to sign the OpenCore EFI files.  
+After that I decided to switch to Intel by just replacing the mainboard and CPU.
+
 # What doesn't work well?
 
 ~~Usually the hack boots as expected, but sometimes it stucks at the apple logo w/o any progress bar. So rebooting via Reset button is needed. Currently I've no clue why that is happening.~~ 
@@ -64,6 +72,10 @@ Sleep at all. Don't have the change to get into sleep yet.
 Currently booting is possible w/ just a small issue: ~~the additionally connected USB-Keyboard~~ USB 2.0 (USB legacy mode is enabled in BIOS) seems not to be working, unless USB-C is disconnected before boot, so I guess it's not OC related but more a generell issue.
 
 At the moment I'm being quite satisfied with the system. Added GPRW renaming to improve S3 handling. Needs some more testing.
+
+# Outlook?
+
+One of the next steps will be to re-enable UEFI Secure Boot again.
 
 # Followed Guides?
 
