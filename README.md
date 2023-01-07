@@ -3,7 +3,7 @@
 ![About This Mac](./images/AboutThisMac.jpg "About This Mac")
 
 
- OpenCore EFI for Intel Alder Lake
+ **OpenCore EFI for Intel Alder Lake**
 
 - Intel i9-12900K (All cores (P+E+HT) activated)
 - Gigabyte Z690 Aorus Elite DDR4 AX (BIOS version F21)
@@ -85,7 +85,7 @@ One of the next steps will be to re-enable UEFI Secure Boot again.
 2. Alder Lake adaptations done according to:  
 [ChrisWayg](https://chriswayg.gitbook.io/opencore-visual-beginners-guide/advanced-topics/using-alder-lake)
 
-Before just copying a config.plist from the internet go through the guids and start from skratch with the sample.plist provided by Dortania by your own.
+_**Note:** Before just copying a config.plist from the internet go through the guids and start from skratch with the sample.plist provided by Dortania by your own and take that just for reference._
 
 # Disclaimer
 
