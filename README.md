@@ -69,7 +69,8 @@ Sleep at all, I guess. Haven't had the chance to get into sleep yet.
 
 ~~ACPI Patches introduced according to guide 2 for Gigabyte Z690 mainboards since neither mouse nor keyboard were working and restart of the whole system was needed. Has to be observed further if Sleep has killed USB functionality.~~ 
 
-Currently booting is possible w/ just a small issue: ~~the additionally connected USB-Keyboard~~ USB 2.0 (USB legacy mode is enabled in BIOS) seems not to be working, unless USB-C is disconnected before boot, so I guess it's not OC related but more a generell issue.
+Currently booting is possible w/ just a small issue: ~~the additionally connected USB-Keyboard~~ USB 2.0 (USB legacy mode is enabled in BIOS) seems not to be working, unless USB-C is disconnected before boot.~~, so I guess it's not OC related but more a generell issue.~~
+It's more or less related to the connected USB-C Hub. An ususal USB-C SSD works as expected.
 
 At the moment I'm being quite satisfied with the system. Added GPRW renaming to improve S3 handling. Needs some more testing.
 
