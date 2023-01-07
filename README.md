@@ -56,14 +56,14 @@ Almost everything:
 
 # Motivation?
 
-I set up my first hack based on a **AMD Ryzen 9 3900X** and a **Gigabyte X570 Aorus Elite** mainboard. After having the USB mapped as expected, that hack was working well over the years. Survived the updates to Monterey and Ventura w/o issues. But with Venturae more and more software was not working any longer. So, I was running into more issues with **Photoshop** and **Virtualbox** was not working any longer at all. Especially Virtualbox was needed to get UEFI Secure Boot working since Unix was needed to sign the OpenCore EFI files.  
+I set up my first hack based on a **AMD Ryzen 9 3900X** and a **Gigabyte X570 Aorus Elite** mainboard. After having the USB mapped as expected, that hack was working well over the years. Survived the updates to Monterey and Ventura w/o issues. But with Venturae more and more software was not working any longer. So, I was running into more issues with **Photoshop** and **Virtualbox** was not working any longer at all. Especially Virtualbox was needed to get UEFI Secure Boot working since I used Debian to sign the OpenCore EFI files.  
 After that I decided to switch to Intel by just replacing the mainboard and CPU.
 
 # What doesn't work well?
 
 ~~Usually the hack boots as expected, but sometimes it stucks at the apple logo w/o any progress bar. So rebooting via Reset button is needed. Currently I've no clue why that is happening.~~ 
 
-Sleep at all. Don't have the change to get into sleep yet.
+Sleep at all, I guess. Haven't had the chance to get into sleep yet.
 
 # Current State?
 
@@ -74,8 +74,8 @@ Currently booting is possible w/ just a small issue: ~~the additionally connecte
 At the moment I'm being quite satisfied with the system. Added GPRW renaming to improve S3 handling. Needs some more testing.
 
 # Outlook?
-
-One of the next steps will be to re-enable UEFI Secure Boot again.
+* [ ] One of the next steps will be to re-enable UEFI Secure Boot again.
+* [ ] Try to solve the USB-C boot issue
 
 # Followed Guides?
 
@@ -85,7 +85,9 @@ One of the next steps will be to re-enable UEFI Secure Boot again.
 2. Alder Lake adaptations done according to:  
 [ChrisWayg](https://chriswayg.gitbook.io/opencore-visual-beginners-guide/advanced-topics/using-alder-lake)
 
-_**Note:** Before just copying a config.plist from the internet go through the guids and start from skratch with the sample.plist provided by Dortania by your own and take that just for reference._
+````text
+Before just copying a config.plist from the internet go through the guids and start from skratch with the sample.plist provided by Dortania by your own and take that just for reference.
+````  
 
 # Disclaimer
 
