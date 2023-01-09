@@ -53,6 +53,8 @@ Almost everything:
 | [LucyRTL8125Ethernet](https://www.insanelymac.com/forum/files/file/1004-lucyrtl8125ethernet/)    | 1.1.0    |
 | [RadeonSensor](https://github.com/aluveitie/RadeonSensor/releases/tag/0.3.1) | 0.3.1 |
 | [RestrictEvents](https://github.com/acidanthera/RestrictEvents/releases/tag/1.0.9) | 1.0.9 | 
+| [CPUFriend](https://github.com/acidanthera/CPUFriend/releases/tag/1.2.6) | 1.2.6 | 
+
 
 # Motivation?
 
@@ -73,6 +75,11 @@ Currently booting is possible w/ just a small issue: ~~the additionally connecte
 It's more or less related to the connected USB-C Hub. An ususal USB-C SSD works as expected.
 
 At the moment I'm being quite satisfied with the system. Added GPRW renaming to improve S3 handling. Needs some more testing.
+
+Introduced CPUFriend and CPUFriendDataProvider according to the following bug: https://github.com/dortania/bugtracker/issues/190
+Geekbench 5 benchmark increased for both: Single and Multi-Core tests
+*See result [before](./benchmarks/MacPro7,1-Geekbench_Browser_without_CPUFriend.mht) and [after](./benchmarks/MacPro7,1-Geekbench_Browser_with_CPUFriend.mht) adding CPUFriend.kext.*
+
 
 # Outlook?
 * [ ] One of the next steps will be to re-enable UEFI Secure Boot again.
