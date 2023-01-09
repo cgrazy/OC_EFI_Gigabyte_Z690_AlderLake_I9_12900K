@@ -849,7 +849,7 @@
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
 			<key>SystemProductName</key>
-			<string>iMacPro1,1</string>
+			<string>MacPro7,1</string>
 			<key>SystemSerialNumber</key>
 			<string>xxx</string>
 			<key>SystemUUID</key>
@@ -869,6 +869,242 @@
 		<string>Create</string>
 		<key>UseRawUuidEncoding</key>
 		<false/>
+		<key>Memory</key>
+		<dict>
+			<key>DataWidth</key>
+			<integer>64</integer>
+			<key>ErrorCorrection</key>
+			<integer>3</integer>
+			<key>FormFactor</key>
+			<integer>9</integer>
+			<key>MaxCapacity</key>
+			<integer>68719476736</integer>
+			<key>TotalWidth</key>
+			<integer>64</integer>
+			<key>Type</key>
+			<integer>26</integer>
+			<key>TypeDetail</key>
+			<integer>128</integer>
+			<key>Devices</key>
+			<array>
+				<dict>
+					<key>AssetTag</key>
+					<string></string>
+					<key>BankLocator</key>
+					<string>P0 CHANNEL A</string>
+					<key>DeviceLocator</key>
+					<string>DIMM 0</string>
+					<key>Manufacturer</key>
+					<string>Corsair</string>
+					<key>PartNumber</key>
+					<string>CMK32GX4M2D3000C16</string>
+					<key>SerialNumber</key>
+					<string>0336IFIG5R280013</string>
+					<key>Size</key>
+					<integer>16384</integer>
+					<key>Speed</key>
+					<integer>3000</integer>
+				</dict>
+				<dict>
+					<key>AssetTag</key>
+					<string></string>
+					<key>BankLocator</key>
+					<string>P0 CHANNEL A</string>
+					<key>DeviceLocator</key>
+					<string>DIMM 1</string>
+					<key>Manufacturer</key>
+					<string>Corsair</string>
+					<key>PartNumber</key>
+					<string>CMK32GX4M2D3000C16</string>
+					<key>SerialNumber</key>
+					<string>0336IFIG5R280013</string>
+					<key>Size</key>
+					<integer>16384</integer>
+					<key>Speed</key>
+					<integer>3000</integer>
+				</dict>
+				<dict>
+					<key>AssetTag</key>
+					<string></string>
+					<key>BankLocator</key>
+					<string>P0 CHANNEL B</string>
+					<key>DeviceLocator</key>
+					<string>DIMM 0</string>
+					<key>Manufacturer</key>
+					<string>Corsair</string>
+					<key>PartNumber</key>
+					<string>CMK32GX4M2D3000C16</string>
+					<key>SerialNumber</key>
+					<string>0336IFIG5R280014</string>
+					<key>Size</key>
+					<integer>16384</integer>
+					<key>Speed</key>
+					<integer>3000</integer>
+				</dict>
+				<dict>
+					<key>AssetTag</key>
+					<string></string>
+					<key>BankLocator</key>
+					<string>P0 CHANNEL B</string>
+					<key>DeviceLocator</key>
+					<string>DIMM 1</string>
+					<key>Manufacturer</key>
+					<string>Corsair</string>
+					<key>PartNumber</key>
+					<string>CMK32GX4M2D3000C16</string>
+					<key>SerialNumber</key>
+					<string>0336IFIG5R280014</string>
+					<key>Size</key>
+					<integer>16384</integer>
+					<key>Speed</key>
+					<integer>3000</integer>
+				</dict>
+				<dict>
+					<key>AssetTag</key>
+					<string></string>
+					<key>BankLocator</key>
+					<string></string>
+					<key>DeviceLocator</key>
+					<string>Slot 5</string>
+					<key>Manufacturer</key>
+					<string>Acidanthera</string>
+					<key>PartNumber</key>
+					<string></string>
+					<key>SerialNumber</key>
+					<string></string>
+					<key>Size</key>
+					<integer>1</integer>
+					<key>Speed</key>
+					<integer>1</integer>
+				</dict>
+				<dict>
+					<key>AssetTag</key>
+					<string></string>
+					<key>BankLocator</key>
+					<string></string>
+					<key>DeviceLocator</key>
+					<string>Slot 6</string>
+					<key>Manufacturer</key>
+					<string>Acidanthera</string>
+					<key>PartNumber</key>
+					<string></string>
+					<key>SerialNumber</key>
+					<string></string>
+					<key>Size</key>
+					<integer>1</integer>
+					<key>Speed</key>
+					<integer>1</integer>
+				</dict>
+				<dict>
+					<key>AssetTag</key>
+					<string></string>
+					<key>BankLocator</key>
+					<string></string>
+					<key>DeviceLocator</key>
+					<string>Slot 7</string>
+					<key>Manufacturer</key>
+					<string>Acidanthera</string>
+					<key>PartNumber</key>
+					<string></string>
+					<key>SerialNumber</key>
+					<string></string>
+					<key>Size</key>
+					<integer>1</integer>
+					<key>Speed</key>
+					<integer>1</integer>
+				</dict>
+				<dict>
+					<key>AssetTag</key>
+					<string></string>
+					<key>BankLocator</key>
+					<string></string>
+					<key>DeviceLocator</key>
+					<string>Slot 8</string>
+					<key>Manufacturer</key>
+					<string>Acidanthera</string>
+					<key>PartNumber</key>
+					<string></string>
+					<key>SerialNumber</key>
+					<string></string>
+					<key>Size</key>
+					<integer>1</integer>
+					<key>Speed</key>
+					<integer>1</integer>
+				</dict>
+				<dict>
+					<key>AssetTag</key>
+					<string></string>
+					<key>BankLocator</key>
+					<string></string>
+					<key>DeviceLocator</key>
+					<string>Slot 9</string>
+					<key>Manufacturer</key>
+					<string>Acidanthera</string>
+					<key>PartNumber</key>
+					<string></string>
+					<key>SerialNumber</key>
+					<string></string>
+					<key>Size</key>
+					<integer>1</integer>
+					<key>Speed</key>
+					<integer>1</integer>
+				</dict>
+				<dict>
+					<key>AssetTag</key>
+					<string></string>
+					<key>BankLocator</key>
+					<string></string>
+					<key>DeviceLocator</key>
+					<string>Slot 10</string>
+					<key>Manufacturer</key>
+					<string>Acidanthera</string>
+					<key>PartNumber</key>
+					<string></string>
+					<key>SerialNumber</key>
+					<string></string>
+					<key>Size</key>
+					<integer>1</integer>
+					<key>Speed</key>
+					<integer>1</integer>
+				</dict>
+				<dict>
+					<key>AssetTag</key>
+					<string></string>
+					<key>BankLocator</key>
+					<string></string>
+					<key>DeviceLocator</key>
+					<string>Slot 11</string>
+					<key>Manufacturer</key>
+					<string>Acidanthera</string>
+					<key>PartNumber</key>
+					<string></string>
+					<key>SerialNumber</key>
+					<string></string>
+					<key>Size</key>
+					<integer>1</integer>
+					<key>Speed</key>
+					<integer>1</integer>
+				</dict>
+				<dict>
+					<key>AssetTag</key>
+					<string></string>
+					<key>BankLocator</key>
+					<string></string>
+					<key>DeviceLocator</key>
+					<string>Slot 12</string>
+					<key>Manufacturer</key>
+					<string>Acidanthera</string>
+					<key>PartNumber</key>
+					<string></string>
+					<key>SerialNumber</key>
+					<string></string>
+					<key>Size</key>
+					<integer>1</integer>
+					<key>Speed</key>
+					<integer>1</integer>
+				</dict>
+			</array>
+		</dict>
 	</dict>
 	<key>UEFI</key>
 	<dict>
