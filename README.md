@@ -78,7 +78,7 @@ At the moment I'm being quite satisfied with the system. Added GPRW renaming to 
 
 Introduced CPUFriend and CPUFriendDataProvider according to the following bug: https://github.com/dortania/bugtracker/issues/190
 Geekbench 5 benchmark increased for both: Single and Multi-Core tests
-*See result [before](./benchmarks/MacPro7,1-Geekbench_Browser_without_CPUFriend.mht) and [after](./benchmarks/MacPro7,1-Geekbench_Browser_with_CPUFriend.mht) adding CPUFriend.kext.*
+*See result [before](./images/MacPro7,1-Geekbench_Browser_without_CPUFriend.mht.png) and [after](./images/MacPro7,1-Geekbench_Browser_with_CPUFriend.mht.png) adding CPUFriend.kext.
 
 
 # Outlook?
