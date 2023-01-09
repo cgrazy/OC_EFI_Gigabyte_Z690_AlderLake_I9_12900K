@@ -63,23 +63,17 @@ After that I decided to switch to Intel by just replacing the mainboard and CPU.
 
 # What doesn't work well?
 
-~~Usually the hack boots as expected, but sometimes it stucks at the apple logo w/o any progress bar. So rebooting via Reset button is needed. Currently I've no clue why that is happening.~~ 
-
 Sleep at all, I guess. Haven't had the chance to get into sleep yet.
 
 # Current State?
 
-~~ACPI Patches introduced according to guide 2 for Gigabyte Z690 mainboards since neither mouse nor keyboard were working and restart of the whole system was needed. Has to be observed further if Sleep has killed USB functionality.~~ 
+Currently booting is possible w/ just a small issue: USB 2.0 (USB legacy mode is enabled in BIOS) seems not to be working, unless my USB-C Hub is disconnected before boot. It's more or less related to the connected USB-C Hub. An ususal USB-C SSD works as expected. So I guess it's not releated to the Hackintosh itself.
 
-Currently booting is possible w/ just a small issue: ~~the additionally connected USB-Keyboard~~ USB 2.0 (USB legacy mode is enabled in BIOS) seems not to be working, unless USB-C is disconnected before boot.~~, so I guess it's not OC related but more a generell issue.~~
-It's more or less related to the connected USB-C Hub. An ususal USB-C SSD works as expected.
+Introduced CPUFriend and CPUFriendDataProvider according to the following [bug](https://github.com/dortania/bugtracker/issues/190).  
+Geekbench 5 benchmark test also increased for both, single  and multi-core tests
+See result [before](./images/MacPro7,1-Geekbench_Browser_without_CPUFriend.mht.png) and [after](./images/MacPro7,1-Geekbench_Browser_with_CPUFriend.mht.png) adding CPUFriend.kext.
 
-At the moment I'm being quite satisfied with the system. Added GPRW renaming to improve S3 handling. Needs some more testing.
-
-Introduced CPUFriend and CPUFriendDataProvider according to the following bug: https://github.com/dortania/bugtracker/issues/190
-Geekbench 5 benchmark increased for both: Single and Multi-Core tests
-*See result [before](./images/MacPro7,1-Geekbench_Browser_without_CPUFriend.mht.png) and [after](./images/MacPro7,1-Geekbench_Browser_with_CPUFriend.mht.png) adding CPUFriend.kext.
-
+At the moment I'm being quite satisfied with the system. 
 
 # Outlook?
 * [ ] One of the next steps will be to re-enable UEFI Secure Boot again.
