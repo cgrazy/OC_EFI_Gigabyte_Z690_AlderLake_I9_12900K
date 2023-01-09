@@ -94,7 +94,8 @@ Geekbench 5 benchmark increased for both: Single and Multi-Core tests
 [ChrisWayg](https://chriswayg.gitbook.io/opencore-visual-beginners-guide/advanced-topics/using-alder-lake)
 
 ````text
-Before just copying a config.plist from the internet go through the guids and start from skratch with the sample.plist provided by Dortania by your own and take that just for reference.
+Before just copying a config.plist from the internet go through the guids and start from skratch  
+with the sample.plist provided by Dortania by your own and take that just for reference.
 ````  
 
 # Disclaimer
