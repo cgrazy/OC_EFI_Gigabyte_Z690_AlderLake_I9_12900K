@@ -65,9 +65,12 @@ After that I decided to switch to Intel by just replacing the mainboard and CPU.
 
 Sleep at all, I guess. Haven't had the chance to get into sleep yet.
 
+Boot gets stuck when the USB 3.2 Gen1 ports on the front panel are connected (well known Apple logo w/o process bar). Maybe I've to check my USBMap once again.
+
 # Current State?
 
-Currently booting is possible w/ just a small issue: USB 2.0 (USB legacy mode is enabled in BIOS) seems not to be working, unless my USB-C Hub is disconnected before boot. It's more or less related to the connected USB-C Hub. An ususal USB-C SSD works as expected. So I guess it's not releated to the Hackintosh itself.
+My USB-C Hub issues seems to be resolved. My mistake I've observed that another USB 3.0 Hub issued some indifferences and was not working as expected. So an attached USB 3.0 device got disconnected automatically after a certain time w/o any interaction.  
+After removing that USB 3.0 Hub booting and entering bios, even with connected USB-C Hub is possible.
 
 Introduced CPUFriend and CPUFriendDataProvider according to the following [bug](https://github.com/dortania/bugtracker/issues/190).  
 Geekbench 5 benchmark test also increased for both, single  and multi-core tests
@@ -77,7 +80,8 @@ At the moment I'm being quite satisfied with the system.
 
 # Outlook?
 * [ ] One of the next steps will be to re-enable UEFI Secure Boot again.
-* [ ] Try to solve the USB-C boot issue
+* [#] Try to solve the USB-C boot issue
+* [ ] Solve the "Boot gets stuck" issue when USB devices are connected to the front panel. 
 
 # Followed Guides?
 
