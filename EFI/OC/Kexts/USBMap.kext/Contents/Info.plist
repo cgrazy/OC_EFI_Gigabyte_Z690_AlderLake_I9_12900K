@@ -46,14 +46,14 @@
 				<data>GQAAAA==</data>
 				<key>ports</key>
 				<dict>
-					<key>HS04</key>
+					<key>HS01</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>Comment</key>
-						<string>Back, USB 2.0 on USB 3.2 Gen1 (USB-C)</string>
+						<string>Back, USB 2.0 on USB-C</string>
 						<key>port</key>
-						<data>BAAAAA==</data>
+						<data>AQAAAA==</data>
 					</dict>
 					<key>HS05</key>
 					<dict>
@@ -87,7 +87,7 @@
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>Comment</key>
-						<string>Front, 2x USB 2.0</string>
+						<string>Front, 2x USB 2.0 + BT</string>
 						<key>port</key>
 						<data>DAAAAA==</data>
 					</dict>
@@ -112,7 +112,7 @@
 					<key>SS02</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>255</integer>
+						<integer>10</integer>
 						<key>Comment</key>
 						<string>Front, USB-C (3.2 Gen2)</string>
 						<key>port</key>

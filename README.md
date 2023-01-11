@@ -69,19 +69,22 @@ Boot gets stuck when the USB 3.2 Gen1 ports on the front panel are connected (we
 
 # Current State?
 
-My USB-C Hub issues seems to be resolved. My mistake I've observed that another USB 3.0 Hub issued some indifferences and was not working as expected. So an attached USB 3.0 device got disconnected automatically after a certain time w/o any interaction.  
-After removing that USB 3.0 Hub booting and entering bios, even with connected USB-C Hub is possible.
+I guess, finally I resolved my USB issues. I've attached a LaCie Rugged device since years, but somehow when connected to any port that device leads to a stucked boot. As soon as the device is disconnected, booting is possible w/o any issues. Strange!
+
+While anaylizing that I was logged into Windows to use USBToolBox to check my USB mapping, and - really - I've done a small mistake with the first port. So my USBMap.kext needs to be updated slightly.
 
 Introduced CPUFriend and CPUFriendDataProvider according to the following [bug](https://github.com/dortania/bugtracker/issues/190).  
 Geekbench 5 benchmark test also increased for both, single  and multi-core tests
 See result [before](./images/MacPro7,1-Geekbench_Browser_without_CPUFriend.mht.png) and [after](./images/MacPro7,1-Geekbench_Browser_with_CPUFriend.mht.png) adding CPUFriend.kext.
+
+For comparison reason I've uploaded the Geekbench reference done on [Windows 10 22H2](./images/MacPro7,1-Geekbench_Windows_Reference.png). On Windows a slightly better multi-core performance can be measured compared to the CPUFriend.kext version used on MacOS.
 
 At the moment I'm being quite satisfied with the system. 
 
 # Outlook?
 * [ ] One of the next steps will be to re-enable UEFI Secure Boot again.
 * [#] Try to solve the USB-C boot issue
-* [ ] Solve the "Boot gets stuck" issue when USB devices are connected to the front panel. 
+* [#] Solve the "Boot gets stuck" issue when USB devices are connected to the front panel. 
 
 # Followed Guides?
 
