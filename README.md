@@ -17,7 +17,7 @@
 # What is working?
 
 Almost everything:
-- MacOS Ventura 13.1 Update (set up the hack on 13.0.1)
+- MacOS Ventura 13.2
 - Audio
 - DP and HDMI via dGPU
 	- Screen 1: 4k via DP
@@ -65,13 +65,9 @@ After that I decided to switch to Intel by just replacing the mainboard and CPU.
 
 Sleep at all, I guess. Haven't had the chance to get into sleep yet.
 
-Boot gets stuck when the USB 3.2 Gen1 ports on the front panel are connected (well known Apple logo w/o process bar). Maybe I've to check my USBMap once again.
-
 # Current State?
 
 I guess, finally I resolved my USB issues. I've attached a LaCie Rugged device since years, but somehow when connected to any port that device leads to a stucked boot. As soon as the device is disconnected, booting is possible w/o any issues. Strange!
-
-While anaylizing that I was logged into Windows to use USBToolBox to check my USB mapping, and - really - I've done a small mistake with the first port. So my USBMap.kext needs to be updated slightly.
 
 Introduced CPUFriend and CPUFriendDataProvider according to the following [bug](https://github.com/dortania/bugtracker/issues/190).  
 Geekbench 5 benchmark test also increased for both, single  and multi-core tests
