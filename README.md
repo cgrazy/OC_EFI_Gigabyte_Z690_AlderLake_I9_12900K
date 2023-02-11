@@ -78,9 +78,9 @@ For comparison reason I've uploaded the Geekbench reference done on [Windows 10 
 At the moment I'm being quite satisfied with the system. 
 
 # Outlook?
-* [#] One of the next steps will be to re-enable UEFI Secure Boot again. (signed files will not be uploaded).
-* [#] Try to solve the USB-C boot issue
-* [#] Solve the "Boot gets stuck" issue when USB devices are connected to the front panel. 
+- [x] One of the next steps will be to re-enable UEFI Secure Boot again. (signed files will not be uploaded).  
+- [x] Try to solve the USB-C boot issue
+- [x] Solve the "Boot gets stuck" issue when USB devices are connected to the front panel. 
 
 # Followed Guides?
 
