@@ -12,12 +12,12 @@
 - Wifi/BT via BRCM20702
 - Windows 10 on a 2nd SSD
 - MacOS Ventura 13.0.1 on a 3rd SSD
-- [OC Version 0.8.8](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.8.8)
+- [OC Version 0.8.9](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.8.9)
 
 # What is working?
 
 Almost everything:
-- MacOS Ventura 13.2
+- MacOS Ventura 13.2.1
 - Audio
 - DP and HDMI via dGPU
 	- Screen 1: 4k via DP
@@ -42,8 +42,8 @@ Almost everything:
 | **Kext**  | **Version**  |
 |:----------|:----------|
 | [Lilu](https://github.com/acidanthera/Lilu/releases/tag/1.6.3)    | 1.6.3   |
-| [AppleALC](https://github.com/acidanthera/AppleALC/releases/tag/1.7.8)| 1.7.8 |
-| [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases/tag/1.6.3)    | 1.6.3    
+| [AppleALC](https://github.com/acidanthera/AppleALC/releases/tag/1.7.9)| 1.7.9 |
+| [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases/tag/1.6.4)    | 1.6.4    
 | [VirtualSCM](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.0)    | 1.3.0    |
 | [SMCProcessor](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.0)    | 1.3.0    |
 | [SMCSuperIO](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.0)    | 1.3.0    |
