@@ -12,7 +12,7 @@
 - Wifi/BT via BRCM20702
 - Windows 10 on a 2nd SSD
 - MacOS Ventura 13.0.1 on a 3rd SSD
-- [OC Version 0.8.9](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.8.9)
+- [OC Version 0.9.0](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.0)
 
 # What is working?
 
@@ -41,10 +41,10 @@ Almost everything:
 
 | **Kext**  | **Version**  |
 |:----------|:----------|
-| [Lilu](https://github.com/acidanthera/Lilu/releases/tag/1.6.3)    | 1.6.3   |
-| [AppleALC](https://github.com/acidanthera/AppleALC/releases/tag/1.7.9)| 1.7.9 |
+| [Lilu](https://github.com/acidanthera/Lilu/releases/tag/1.6.4)    | 1.6.4   |
+| [AppleALC](https://github.com/acidanthera/AppleALC/releases/tag/1.8.0)| 1.8.0 |
 | [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases/tag/1.6.4)    | 1.6.4    
-| [VirtualSCM](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.0)    | 1.3.0    |
+| [VirtualSCM](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.1)    | 1.3.1    |
 | [SMCProcessor](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.0)    | 1.3.0    |
 | [SMCSuperIO](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.0)    | 1.3.0    |
 | [CpuTopologyRebuild](https://github.com/b00t0x/CpuTopologyRebuild/releases/tag/1.1.0)    | 1.1.0    |
