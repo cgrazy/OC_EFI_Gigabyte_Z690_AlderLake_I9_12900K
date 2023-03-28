@@ -17,7 +17,7 @@
 # What is working?
 
 Almost everything:
-- MacOS Ventura 13.2.1
+- MacOS Ventura 13.3
 - Audio
 - DP and HDMI via dGPU
 	- Screen 1: 4k via DP
