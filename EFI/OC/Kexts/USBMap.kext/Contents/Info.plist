@@ -166,7 +166,7 @@
 					<key>SS08</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>255</integer>
+						<integer>3</integer>
 						<key>Comment</key>
 						<string>Front, USB3.2 Gen1 left</string>
 						<key>port</key>
@@ -175,7 +175,7 @@
 					<key>SS09</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>255</integer>
+						<integer>3</integer>
 						<key>Comment</key>
 						<string>Front, USB3.2 Gen1 right</string>
 						<key>port</key>
