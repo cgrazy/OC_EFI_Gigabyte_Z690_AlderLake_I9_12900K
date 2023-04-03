@@ -12,7 +12,7 @@
 - Wifi/BT via BRCM20702
 - Windows 10 on a 2nd SSD
 - MacOS Ventura 13.0.1 on a 3rd SSD
-- [OC Version 0.9.0](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.0)
+- [OC Version 0.9.1](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.1)
 
 # What is working?
 
@@ -42,7 +42,7 @@ Almost everything:
 | **Kext**  | **Version**  |
 |:----------|:----------|
 | [Lilu](https://github.com/acidanthera/Lilu/releases/tag/1.6.4)    | 1.6.4   |
-| [AppleALC](https://github.com/acidanthera/AppleALC/releases/tag/1.8.0)| 1.8.0 |
+| [AppleALC](https://github.com/acidanthera/AppleALC/releases/tag/1.8.1)| 1.8.1 |
 | [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases/tag/1.6.4)    | 1.6.4    
 | [VirtualSCM](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.1)    | 1.3.1    |
 | [SMCProcessor](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.0)    | 1.3.0    |
@@ -52,7 +52,7 @@ Almost everything:
 | [NVMeFix](https://github.com/acidanthera/NVMeFix/releases/tag/1.1.0)    | 1.1.0    |
 | [LucyRTL8125Ethernet](https://www.insanelymac.com/forum/files/file/1004-lucyrtl8125ethernet/)    | 1.1.0    |
 | [RadeonSensor](https://github.com/aluveitie/RadeonSensor/releases/tag/0.3.1) | 0.3.1 |
-| [RestrictEvents](https://github.com/acidanthera/RestrictEvents/releases/tag/1.0.9) | 1.0.9 | 
+| [RestrictEvents](https://github.com/acidanthera/RestrictEvents/releases/tag/1.1.0) | 1.1.0 | 
 | [CPUFriend](https://github.com/acidanthera/CPUFriend/releases/tag/1.2.6) | 1.2.6 | 
 
 
