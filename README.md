@@ -17,7 +17,7 @@
 # What is working?
 
 Almost everything:
-- MacOS Ventura 13.3
+- MacOS Ventura 13.3.1
 - Audio
 - DP and HDMI via dGPU
 	- Screen 1: 4k via DP
@@ -67,7 +67,9 @@ Sleep at all, I guess. Haven't had the chance to get into sleep yet.
 
 # Current State?
 
-I guess, finally I resolved my USB issues. I've attached a LaCie Rugged device since years, but somehow when connected to any port that device leads to a stucked boot. As soon as the device is disconnected, booting is possible w/o any issues. Strange!
+The 13.3.1 update was somehow a mess. System was up and running well and I just pressed the "Update Now" button in the System Settings dialog. System booted and was stuck at the Apple Logo. Nothing went forward. Trying to incorporate a time machine backup was somehow messing up the system even more. At the end, I prepared a new USB stick for a fresh install, had to disable the iGPU in BIOS to get Apple to boot again. After system was up and running again, I was switching on iGPU again and system behaves like before.
+
+~~I guess, finally I resolved my USB issues. I've attached a LaCie Rugged device since years, but somehow when connected to any port that device leads to a stucked boot. As soon as the device is disconnected, booting is possible w/o any issues. Strange!~~
 
 Introduced CPUFriend and CPUFriendDataProvider according to the following [bug](https://github.com/dortania/bugtracker/issues/190).  
 Geekbench 5 benchmark test also increased for both, single  and multi-core tests
