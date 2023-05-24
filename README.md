@@ -11,49 +11,50 @@
 - 64 GB DDR4-3000, XMP enabled
 - Wifi/BT via BRCM20702
 - Windows 10 on a 2nd SSD
-- MacOS Ventura 13.0.1 on a 3rd SSD
-- [OC Version 0.9.1](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.1)
+- MacOS Ventura 13.3 on a 3rd SSD
+- [OC Version 0.9.2](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.2)
 
 # What is working?
 
-Almost everything:
-- MacOS Ventura 13.3.1
-- Audio
-- DP and HDMI via dGPU
-	- Screen 1: 4k via DP
-	- Screen 2: 1080p via HDMI
-- DRM Content (Netflix, Amazon Prime, Apple TV+)
-- Wifi/BT workingout of the box
-- all iServices (iMessage, iCloud, AirDrop, unlock with Apple Watch)
-- CPU temperature and fan speeds in iStats and/or Intel Power Gadget
-- USB Ports mapped: 15 in use out of 21 possibly available
-  - 2x USB 2.0 on the front panel via internal USB header (one port in USB mapping)
-  - 4x USB 2.0 on the back (one port in USB mapping)
-  - 1x RGB Fusion 2.0
-  - 2x USB 3.2 Gen 1 on the front via internal USB header
-  - 2x USB 3.2 Gen 2 on the back
-  - 3x USB 3.2 Gen 1 on the back   
-	- 3x with USB 2.0 personality
-  - 2x USB-C (one back and front with up to 10 Gbps)
-- Continuity Camera with iPhone 14 Pro
+**Almost everything:**
+  
+- MacOS Ventura 13.4  
+- Audio  
+- DP and HDMI via dGPU  
+- Screen 1: 4k via DP  
+- Screen 2: 1080p via HDMI  
+- DRM Content (Netflix, Amazon Prime, Apple TV+)  
+- Wifi/BT workingout of the box  
+- all iServices (iMessage, iCloud, AirDrop, unlock with Apple Watch)  
+- CPU temperature and fan speeds in iStats and/or Intel Power Gadget  
+- USB Ports mapped: 15 in use out of 21 possibly available  
+  - 2x USB 2.0 on the front panel via internal USB header (one port in USB mapping)  
+  - 4x USB 2.0 on the back (one port in USB mapping)  
+  - 1x RGB Fusion 2.0  
+  - 2x USB 3.2 Gen 1 on the front via internal USB header  
+  - 2x USB 3.2 Gen 2 on the back  
+  - 3x USB 3.2 Gen 1 on the back     
+	- 3x with USB 2.0 personality  
+  - 2x USB-C (one back and front with up to 10 Gbps)  
+- Continuity Camera with iPhone 14 Pro  
 
 # Used Kexts?
 
-| **Kext**  | **Version**  |
-|:----------|:----------|
-| [Lilu](https://github.com/acidanthera/Lilu/releases/tag/1.6.4)    | 1.6.4   |
-| [AppleALC](https://github.com/acidanthera/AppleALC/releases/tag/1.8.1)| 1.8.1 |
-| [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases/tag/1.6.4)    | 1.6.4    
-| [VirtualSCM](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.1)    | 1.3.1    |
-| [SMCProcessor](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.0)    | 1.3.0    |
-| [SMCSuperIO](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.0)    | 1.3.0    |
-| [CpuTopologyRebuild](https://github.com/b00t0x/CpuTopologyRebuild/releases/tag/1.1.0)    | 1.1.0    |
-| [CpuTscSync](https://github.com/acidanthera/CpuTscSync/releases/tag/1.0.9)    | 1.0.9    |
-| [NVMeFix](https://github.com/acidanthera/NVMeFix/releases/tag/1.1.0)    | 1.1.0    |
-| [LucyRTL8125Ethernet](https://www.insanelymac.com/forum/files/file/1004-lucyrtl8125ethernet/)    | 1.1.0    |
-| [RadeonSensor](https://github.com/aluveitie/RadeonSensor/releases/tag/0.3.1) | 0.3.1 |
-| [RestrictEvents](https://github.com/acidanthera/RestrictEvents/releases/tag/1.1.0) | 1.1.0 | 
-| [CPUFriend](https://github.com/acidanthera/CPUFriend/releases/tag/1.2.6) | 1.2.6 | 
+| **Kext**  | **Version**  |   |
+|:----------|:----------|:---|
+| [Lilu](https://github.com/acidanthera/Lilu/releases/tag/1.6.5)    | 1.6.5   | (new)
+| [AppleALC](https://github.com/acidanthera/AppleALC/releases/tag/1.8.2)| 1.8.2 | (new) 
+| [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases/tag/1.6.4)    | 1.6.4 
+| [VirtualSMC](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.1)    | 1.3.1    
+| [SMCProcessor](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.0)    | 1.3.0    
+| [SMCSuperIO](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.0)    | 1.3.0    
+| [CpuTopologyRebuild](https://github.com/b00t0x/CpuTopologyRebuild/releases/tag/1.1.0)    | 1.1.0    
+| [CpuTscSync](https://github.com/acidanthera/CpuTscSync/releases/tag/1.0.9)    | 1.0.9    
+| [NVMeFix](https://github.com/acidanthera/NVMeFix/releases/tag/1.1.0)    | 1.1.0    
+| [LucyRTL8125Ethernet](https://www.insanelymac.com/forum/files/file/1004-lucyrtl8125ethernet/)    | 1.1.0  
+| [RadeonSensor](https://github.com/aluveitie/RadeonSensor/releases/tag/0.3.1) | 0.3.1 
+| [RestrictEvents](https://github.com/acidanthera/RestrictEvents/releases/tag/1.1.1) | 1.1.1 | (new)
+| [CPUFriend](https://github.com/acidanthera/CPUFriend/releases/tag/1.2.6) | 1.2.6 
 
 
 # Motivation?
@@ -86,11 +87,12 @@ At the moment I'm being quite satisfied with the system.
 
 # Followed Guides?
 
-1. Followed the Comet Lake guide provided by Dorania:  
+1. Followed the Comet Lake guide provided by Dorania: 
 [Dortania Team](https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html)
 
-2. Alder Lake adaptations done according to:  
-[ChrisWayg](https://chriswayg.gitbook.io/opencore-visual-beginners-guide/advanced-topics/using-alder-lake)
+2. Alder Lake adaptations done according to: [ChrisWayg](https://chriswayg.gitbook.io/opencore-visual-beginners-guide/advanced-topics/using-alder-lake)
+
+3. Enable UEFI Secure Boot: [perez987](https://github.com/perez987/OpenCore-and-UEFI-Secure-Boot)
 
 ````text
 Before just copying a config.plist from the internet go through the guids and start from skratch  
