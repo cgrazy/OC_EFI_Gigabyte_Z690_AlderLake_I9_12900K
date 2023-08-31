@@ -12,13 +12,13 @@
 - Wifi/BT via BRCM20702
 - Windows 10 on a 2nd SSD
 - MacOS Ventura 13.3 on a 3rd SSD
-- [OC Version 0.9.2](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.2)
+- [OC Version 0.9.2](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.4) (OC Version 0.9.3 was not working. Boot stuck at Apple Logo progress bar at around 20 %)
 
 # What is working?
 
 **Almost everything:**
   
-- MacOS Ventura 13.4  
+- MacOS Ventura 13.5.1  
 - Audio  
 - DP and HDMI via dGPU  
 - Screen 1: 4k via DP  
@@ -42,19 +42,19 @@
 
 | **Kext**  | **Version**  |   |
 |:----------|:----------|:---|
-| [Lilu](https://github.com/acidanthera/Lilu/releases/tag/1.6.5)    | 1.6.5   | (new)
-| [AppleALC](https://github.com/acidanthera/AppleALC/releases/tag/1.8.2)| 1.8.2 | (new) 
-| [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases/tag/1.6.4)    | 1.6.4 
-| [VirtualSMC](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.1)    | 1.3.1    
-| [SMCProcessor](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.0)    | 1.3.0    
-| [SMCSuperIO](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.0)    | 1.3.0    
+| [Lilu](https://github.com/acidanthera/Lilu/releases/tag/1.6.7)    | 1.6.7   | 
+| [AppleALC](https://github.com/acidanthera/AppleALC/releases/tag/1.8.4)| 1.8.4 |  
+| [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases/tag/1.6.6)    | 1.6.6 
+| [VirtualSMC](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.2)    | 1.3.2    
+| [SMCProcessor](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.2)    | 1.3.2    
+| [SMCSuperIO](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.2)    | 1.3.2    
 | [CpuTopologyRebuild](https://github.com/b00t0x/CpuTopologyRebuild/releases/tag/1.1.0)    | 1.1.0    
-| [CpuTscSync](https://github.com/acidanthera/CpuTscSync/releases/tag/1.0.9)    | 1.0.9    
+| [CpuTscSync](https://github.com/acidanthera/CpuTscSync/releases/tag/1.1.0)    | 1.1.0    
 | [NVMeFix](https://github.com/acidanthera/NVMeFix/releases/tag/1.1.0)    | 1.1.0    
 | [LucyRTL8125Ethernet](https://www.insanelymac.com/forum/files/file/1004-lucyrtl8125ethernet/)    | 1.1.0  
 | [RadeonSensor](https://github.com/aluveitie/RadeonSensor/releases/tag/0.3.1) | 0.3.1 
-| [RestrictEvents](https://github.com/acidanthera/RestrictEvents/releases/tag/1.1.1) | 1.1.1 | (new)
-| [CPUFriend](https://github.com/acidanthera/CPUFriend/releases/tag/1.2.6) | 1.2.6 
+| [RestrictEvents](https://github.com/acidanthera/RestrictEvents/releases/tag/1.1.1) | 1.1.1 |
+| [CPUFriend](https://github.com/acidanthera/CPUFriend/releases/tag/1.2.7) | 1.2.7 |  
 
 
 # Motivation?
