@@ -12,13 +12,13 @@
 - Wifi/BT via BRCM20702
 - Windows 10 on a 2nd SSD
 - MacOS Ventura 13.3 on a 3rd SSD
-- [OC Version 0.9.2](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.4) (OC Version 0.9.3 was not working. Boot stuck at Apple Logo progress bar at around 20 %)
+- [OC Version 0.9.4](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.4) (OC Version 0.9.3 was not working. Boot stuck at Apple Logo progress bar at around 20 %)
 
 # What is working?
 
 **Almost everything:**
   
-- MacOS Ventura 13.5.1  
+- MacOS Ventura 13.5.2  
 - Audio  
 - DP and HDMI via dGPU  
 - Screen 1: 4k via DP  
