@@ -12,7 +12,7 @@
 - Wifi/BT via BRCM20702
 - Windows 10 on a 2nd SSD
 - MacOS Ventura 13.3 on a 3rd SSD
-- [OC Version 0.9.4](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.4) (OC Version 0.9.3 was not working. Boot stuck at Apple Logo progress bar at around 20 %)
+- [OC Version 0.9.5](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.5) (OC Version 0.9.3 was not working. Boot stuck at Apple Logo progress bar at around 20 %)
 
 # What is working?
 
@@ -43,7 +43,7 @@
 | **Kext**  | **Version**  |   |
 |:----------|:----------|:---|
 | [Lilu](https://github.com/acidanthera/Lilu/releases/tag/1.6.7)    | 1.6.7   | 
-| [AppleALC](https://github.com/acidanthera/AppleALC/releases/tag/1.8.4)| 1.8.4 |  
+| [AppleALC](https://github.com/acidanthera/AppleALC/releases/tag/1.8.5)| 1.8.5 |  
 | [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases/tag/1.6.6)    | 1.6.6 
 | [VirtualSMC](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.2)    | 1.3.2    
 | [SMCProcessor](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.2)    | 1.3.2    
