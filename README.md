@@ -11,14 +11,14 @@
 - 64 GB DDR4-3000, XMP enabled
 - Wifi/BT via BRCM20702
 - Windows 10 on a 2nd SSD
-- MacOS Ventura 13.3 on a 3rd SSD
+- MacOS Sonoma 14.0 on a 3rd SSD (with expected WIFI not working, etc.)
 - [OC Version 0.9.5](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.5) (OC Version 0.9.3 was not working. Boot stuck at Apple Logo progress bar at around 20 %)
 
 # What is working?
 
 **Almost everything:**
   
-- MacOS Ventura 13.5.2  
+- MacOS Ventura 13.6  
 - Audio  
 - DP and HDMI via dGPU  
 - Screen 1: 4k via DP  
@@ -43,7 +43,7 @@
 | **Kext**  | **Version**  |   |
 |:----------|:----------|:---|
 | [Lilu](https://github.com/acidanthera/Lilu/releases/tag/1.6.7)    | 1.6.7   | 
-| [AppleALC](https://github.com/acidanthera/AppleALC/releases/tag/1.8.5)| 1.8.5 |  
+| [AppleALC](https://github.com/acidanthera/AppleALC/releases/tag/1.8.6)| 1.8.6 |  
 | [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases/tag/1.6.6)    | 1.6.6 
 | [VirtualSMC](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.2)    | 1.3.2    
 | [SMCProcessor](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.2)    | 1.3.2    
@@ -53,7 +53,7 @@
 | [NVMeFix](https://github.com/acidanthera/NVMeFix/releases/tag/1.1.0)    | 1.1.0    
 | [LucyRTL8125Ethernet](https://www.insanelymac.com/forum/files/file/1004-lucyrtl8125ethernet/)    | 1.1.0  
 | [RadeonSensor](https://github.com/aluveitie/RadeonSensor/releases/tag/0.3.1) | 0.3.1 
-| [RestrictEvents](https://github.com/acidanthera/RestrictEvents/releases/tag/1.1.1) | 1.1.1 |
+| [RestrictEvents](https://github.com/acidanthera/RestrictEvents/releases/tag/1.1.3) | 1.1.3 |
 | [CPUFriend](https://github.com/acidanthera/CPUFriend/releases/tag/1.2.7) | 1.2.7 |  
 
 
