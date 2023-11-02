@@ -18,7 +18,7 @@
 
 **Almost everything:**
   
-- MacOS Ventura 13.6  
+- MacOS Ventura 13.6.1 
 - Audio  
 - DP and HDMI via dGPU  
 - Screen 1: 4k via DP  
@@ -50,7 +50,7 @@
 | [SMCSuperIO](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.2)    | 1.3.2    
 | [CpuTopologyRebuild](https://github.com/b00t0x/CpuTopologyRebuild/releases/tag/1.1.0)    | 1.1.0    
 | [CpuTscSync](https://github.com/acidanthera/CpuTscSync/releases/tag/1.1.0)    | 1.1.0    
-| [NVMeFix](https://github.com/acidanthera/NVMeFix/releases/tag/1.1.0)    | 1.1.0    
+| [NVMeFix](https://github.com/acidanthera/NVMeFix/releases/tag/1.1.1)    | 1.1.1    
 | [LucyRTL8125Ethernet](https://www.insanelymac.com/forum/files/file/1004-lucyrtl8125ethernet/)    | 1.1.0  
 | [RadeonSensor](https://github.com/aluveitie/RadeonSensor/releases/tag/0.3.1) | 0.3.1 
 | [RestrictEvents](https://github.com/acidanthera/RestrictEvents/releases/tag/1.1.3) | 1.1.3 |
