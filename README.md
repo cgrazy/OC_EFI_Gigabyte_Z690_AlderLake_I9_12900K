@@ -1,6 +1,6 @@
 # OpenCore EFI
 
-![About This Mac](./images/AboutThisMac.jpg "About This Mac")
+![About This Mac](./images/AboutThisMac.png "About This Mac")
 
 
  **OpenCore EFI for Intel Alder Lake**
@@ -18,13 +18,13 @@
 
 **Almost everything:**
   
-- MacOS Ventura 13.6.1 
+- MacOS Sonoma 14.2.1 
 - Audio  
 - DP and HDMI via dGPU  
 - Screen 1: 4k via DP  
 - Screen 2: 1080p via HDMI  
 - DRM Content (Netflix, Amazon Prime, Apple TV+)  
-- Wifi/BT workingout of the box  
+- Wifi/BT working after OCLP root patching
 - all iServices (iMessage, iCloud, AirDrop, unlock with Apple Watch)  
 - CPU temperature and fan speeds in iStats and/or Intel Power Gadget  
 - USB Ports mapped: 15 in use out of 21 possibly available  
@@ -43,18 +43,23 @@
 | **Kext**  | **Version**  |   |
 |:----------|:----------|:---|
 | [Lilu](https://github.com/acidanthera/Lilu/releases/tag/1.6.7)    | 1.6.7   | 
-| [AppleALC](https://github.com/acidanthera/AppleALC/releases/tag/1.8.7)| 1.8.7 |  
+| [AppleALC](https://github.com/acidanthera/AppleALC/releases/tag/1.8.8)| 1.8.8 |  
 | [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases/tag/1.6.6)    | 1.6.6 
 | [VirtualSMC](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.2)    | 1.3.2    
 | [SMCProcessor](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.2)    | 1.3.2    
 | [SMCSuperIO](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.2)    | 1.3.2    
 | [CpuTopologyRebuild](https://github.com/b00t0x/CpuTopologyRebuild/releases/tag/1.1.0)    | 1.1.0    
-| [CpuTscSync](https://github.com/acidanthera/CpuTscSync/releases/tag/1.1.0)    | 1.1.0    
+| [CpuTscSync](https://github.com/acidanthera/CpuTscSync/releases/tag/1.1.1)    | 1.1.1    
 | [NVMeFix](https://github.com/acidanthera/NVMeFix/releases/tag/1.1.1)    | 1.1.1    
 | [LucyRTL8125Ethernet](https://www.insanelymac.com/forum/files/file/1004-lucyrtl8125ethernet/)    | 1.1.0  
 | [RadeonSensor](https://github.com/aluveitie/RadeonSensor/releases/tag/0.3.1) | 0.3.1 
 | [RestrictEvents](https://github.com/acidanthera/RestrictEvents/releases/tag/1.1.3) | 1.1.3 |
-| [CPUFriend](https://github.com/acidanthera/CPUFriend/releases/tag/1.2.7) | 1.2.7 |  
+| [CPUFriend](https://github.com/acidanthera/CPUFriend/releases/tag/1.2.8) | 1.2.8 |  
+| [AMFIPass](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Acidanthera/AMFIPass-v1.4.0-RELEASE.zip) | 1.4.0 |  
+| [BlueToolFixup](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Acidanthera/BlueToolFixup-v2.6.8-RELEASE.zip) | 2.6.8 |  
+| [IOSkywalkFamily](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Wifi/IOSkywalkFamily-v1.0.0.zip) | 1.0.0 |  
+| [IO80211FamilyLegacy](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Wifi/IO80211FamilyLegacy-v1.0.0.zip) | 1.0.0 |  
+| [AirPortBrcmNIC](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Wifi/IO80211FamilyLegacy-v1.0.0.zip) | 1.0.0 |  
 
 
 # Motivation?
@@ -92,7 +97,7 @@ At the moment I'm being quite satisfied with the system.
 
 2. Alder Lake adaptations done according to: [ChrisWayg](https://chriswayg.gitbook.io/opencore-visual-beginners-guide/advanced-topics/using-alder-lake)
 
-3. Enable UEFI Secure Boot: [perez987](https://github.com/perez987/OpenCore-and-UEFI-Secure-Boot)
+3. Root patching using OCLP [perez987](https://github.com/perez987/macOS-14-Sonoma-on-z390-with-OpenCore)
 
 ````text
 Before just copying a config.plist from the internet go through the guids and start from skratch  
