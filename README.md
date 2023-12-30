@@ -83,12 +83,14 @@ See result [before](./images/MacPro7,1-Geekbench_Browser_without_CPUFriend.mht.p
 
 For comparison reason I've uploaded the Geekbench reference done on [Windows 10 22H2](./images/MacPro7,1-Geekbench_Windows_Reference.png). On Windows a slightly better multi-core performance can be measured compared to the CPUFriend.kext version used on MacOS.
 
-At the moment I'm being quite satisfied with the system. 
+At the moment I'm being quite satisfied with the system, nevertheless I'm struggling with a quite strange issue since a few weeks. Even before the update to Sonoma my system started to crash randomly. Out of sudden all the USB devices, including bluetooth devices gets disconnected. Up to know only a reboot resolves that. While I'm able to use the computer using Remote Pro on my iPhone I checked IORegistryExplorer after a crash and saw that my whole XHCI controller was replaced by an XHC2 controller with a few PRTx sub-elements. So, something smashes my USB mapping. If there's someone with an helping hand out there, please get back to me.
+Attached an example of the bluetoothd process crash as seen in the Console app: [crash.txt](./crash.txt)
 
 # Outlook?
 - [x] One of the next steps will be to re-enable UEFI Secure Boot again. (signed files will not be uploaded).  
 - [x] Try to solve the USB-C boot issue
 - [x] Solve the "Boot gets stuck" issue when USB devices are connected to the front panel. 
+
 
 # Followed Guides?
 

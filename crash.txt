@@ -1,0 +1,409 @@
+-------------------------------------
+Translated Report (Full Report Below)
+-------------------------------------
+
+Process:               bluetoothd [16937]
+Path:                  /usr/sbin/bluetoothd
+Identifier:            bluetoothd
+Version:               ???
+Code Type:             X86-64 (Native)
+Parent Process:        launchd [1]
+User ID:               0
+
+Date/Time:             2023-12-30 21:23:41.4580 +0100
+OS Version:            macOS 14.2.1 (23C71)
+Report Version:        12
+Anonymous UUID:        FEB0A921-4F36-4A58-0429-50CCFCE88F3F
+
+
+Time Awake Since Boot: 8300 seconds
+
+System Integrity Protection: enabled
+
+Crashed Thread:        3
+
+Exception Type:        EXC_GUARD
+Exception Codes:       GUARD_TYPE_USER
+Exception Codes:       0x6000000000000012, 0x0000000000000002
+
+Termination Reason:    Namespace LIBSYSTEM, Code 2 Application Triggered Fault
+
+Thread 0:
+0   libsystem_kernel.dylib        	    0x7ff819441a2e mach_msg2_trap + 10
+1   libsystem_kernel.dylib        	    0x7ff81944fe3a mach_msg2_internal + 84
+2   libsystem_kernel.dylib        	    0x7ff819448b62 mach_msg_overwrite + 653
+3   libsystem_kernel.dylib        	    0x7ff819441d1f mach_msg + 19
+4   CoreFoundation                	    0x7ff81955d1b5 __CFRunLoopServiceMachPort + 143
+5   CoreFoundation                	    0x7ff81955bc25 __CFRunLoopRun + 1371
+6   CoreFoundation                	    0x7ff81955b102 CFRunLoopRunSpecific + 557
+7   CoreFoundation                	    0x7ff8195d6b7e CFRunLoopRun + 40
+8   bluetoothd                    	       0x107a92108 0x107a63000 + 192776
+9   dyld                          	    0x7ff8190f6386 start + 1942
+
+Thread 1:
+0   libsystem_kernel.dylib        	    0x7ff819443152 __workq_kernreturn + 10
+1   libsystem_pthread.dylib       	    0x7ff81947dca0 _pthread_wqthread + 416
+2   libsystem_pthread.dylib       	    0x7ff81947cb97 start_wqthread + 15
+
+Thread 2:
+0   libsystem_kernel.dylib        	    0x7ff819443152 __workq_kernreturn + 10
+1   libsystem_pthread.dylib       	    0x7ff81947dca0 _pthread_wqthread + 416
+2   libsystem_pthread.dylib       	    0x7ff81947cb97 start_wqthread + 15
+
+Thread 3 Crashed:
+0   libsystem_kernel.dylib        	    0x7ff81944d11a os_fault_with_payload + 10
+1   bluetoothd                    	       0x107b62f78 0x107a63000 + 1048440
+2   bluetoothd                    	       0x107b095e2 0x107a63000 + 681442
+3   bluetoothd                    	       0x107e79177 0x107a63000 + 4284791
+4   bluetoothd                    	       0x107e7a5f0 0x107a63000 + 4290032
+5   bluetoothd                    	       0x107e57f6a 0x107a63000 + 4149098
+6   bluetoothd                    	       0x107e57b82 0x107a63000 + 4148098
+7   libdispatch.dylib             	    0x7ff8192d82e6 _dispatch_call_block_and_release + 12
+8   libdispatch.dylib             	    0x7ff8192d959a _dispatch_client_callout + 8
+9   libdispatch.dylib             	    0x7ff8192df668 _dispatch_lane_serial_drain + 816
+10  libdispatch.dylib             	    0x7ff8192e0100 _dispatch_lane_invoke + 377
+11  libdispatch.dylib             	    0x7ff8192e9aee _dispatch_root_queue_drain_deferred_wlh + 271
+12  libdispatch.dylib             	    0x7ff8192e93fd _dispatch_workloop_worker_thread + 451
+13  libsystem_pthread.dylib       	    0x7ff81947dc47 _pthread_wqthread + 327
+14  libsystem_pthread.dylib       	    0x7ff81947cb97 start_wqthread + 15
+
+Thread 4:: StackLoop
+0   libsystem_kernel.dylib        	    0x7ff8194445ce __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	    0x7ff81948179c _pthread_cond_wait + 1260
+2   bluetoothd                    	       0x107b098ab 0x107a63000 + 682155
+3   libsystem_pthread.dylib       	    0x7ff819481202 _pthread_start + 99
+4   libsystem_pthread.dylib       	    0x7ff81947cbab thread_start + 15
+
+Thread 5:
+0   libsystem_kernel.dylib        	    0x7ff819441a2e mach_msg2_trap + 10
+1   libsystem_kernel.dylib        	    0x7ff81944fe3a mach_msg2_internal + 84
+2   libsystem_kernel.dylib        	    0x7ff819448b62 mach_msg_overwrite + 653
+3   libsystem_kernel.dylib        	    0x7ff819441d1f mach_msg + 19
+4   CoreFoundation                	    0x7ff81955d1b5 __CFRunLoopServiceMachPort + 143
+5   CoreFoundation                	    0x7ff81955bc25 __CFRunLoopRun + 1371
+6   CoreFoundation                	    0x7ff81955b102 CFRunLoopRunSpecific + 557
+7   CoreFoundation                	    0x7ff8195d6b7e CFRunLoopRun + 40
+8   bluetoothd                    	       0x107b0e0ed 0x107a63000 + 700653
+9   libsystem_pthread.dylib       	    0x7ff819481202 _pthread_start + 99
+10  libsystem_pthread.dylib       	    0x7ff81947cbab thread_start + 15
+
+Thread 6:
+0   libsystem_kernel.dylib        	    0x7ff8194445ce __psynch_cvwait + 10
+1   libsystem_pthread.dylib       	    0x7ff81948176b _pthread_cond_wait + 1211
+2   bluetoothd                    	       0x107b0e1b9 0x107a63000 + 700857
+3   libsystem_pthread.dylib       	    0x7ff819481202 _pthread_start + 99
+4   libsystem_pthread.dylib       	    0x7ff81947cbab thread_start + 15
+
+Thread 7:
+0   libsystem_kernel.dylib        	    0x7ff819443152 __workq_kernreturn + 10
+1   libsystem_pthread.dylib       	    0x7ff81947dca0 _pthread_wqthread + 416
+2   libsystem_pthread.dylib       	    0x7ff81947cb97 start_wqthread + 15
+
+Thread 8:
+
+
+Thread 3 crashed with X86 Thread State (64-bit):
+  rax: 0x0000000002000211  rbx: 0x000000000000006c  rcx: 0x000070000ffba508  rdx: 0x000070000ffba510
+  rdi: 0x0000000000000012  rsi: 0x0000000000000002  rbp: 0x000070000ffba5a0  rsp: 0x000070000ffba508
+   r8: 0x00007f896571e950   r9: 0x0000000000000000  r10: 0x000000000000004a  r11: 0x0000000000000246
+  r12: 0x000070000ffba560  r13: 0x0000000108393090  r14: 0x000000000000004a  r15: 0x000070000ffba510
+  rip: 0x00007ff81944d11a  rfl: 0x0000000000000246  cr2: 0x0000000000000000
+  
+Logical CPU:     0
+Error Code:      0x02000211 
+Trap Number:     133
+
+
+Binary Images:
+       0x108587000 -        0x108592fff com.apple.iokit.IOUSBLib (900.4.2) <e84445fe-f7d0-3311-9abe-3be6b7ef605c> /System/Library/Extensions/IOUSBHostFamily.kext/Contents/PlugIns/IOUSBLib.bundle/Contents/MacOS/IOUSBLib
+       0x108b8e000 -        0x108c19fff libAWDProtobufBluetooth.dylib (*) <87e4ce5a-3775-329f-a74e-12ea9b602176> /System/Library/PrivateFrameworks/WirelessDiagnostics.framework/Versions/A/Libraries/libAWDProtobufBluetooth.dylib
+       0x1083e5000 -        0x1083e8fff com.apple.framework.CoreWLAN (16.0) <ebde0ceb-4d1f-39cf-bbbe-0bf942b337ae> /System/Library/Frameworks/CoreWLAN.framework/Versions/A/CoreWLAN
+       0x108801000 -        0x108804fff com.apple.IO80211 (1.0) <72fb270b-2d3a-39f4-82fd-1b8af408bd39> /System/Library/PrivateFrameworks/IO80211.framework/Versions/A/IO80211
+       0x108cae000 -        0x108d01fff IO80211Old.dylib (*) <d5cf0007-ff51-3af6-9c8e-1e8c75f15238> /System/Library/PrivateFrameworks/IO80211.framework/Versions/A/IO80211Old.dylib
+       0x17a816000 -        0x17a890fff CoreWLANOld.dylib (*) <d5cf0007-e25a-3348-a650-cf35c9c22c36> /System/Library/Frameworks/CoreWLAN.framework/Versions/A/CoreWLANOld.dylib
+       0x108820000 -        0x108823fff com.apple.CoreWiFi (kCoreWiFiMarketingVersion) <c9299165-c74b-31ab-b1d9-f4b9707fd273> /System/Library/PrivateFrameworks/CoreWiFi.framework/Versions/A/CoreWiFi
+       0x1ef37d000 -        0x1ef3a4fff com.apple.WiFiPeerToPeer (520.34.0) <d5cf0007-7a9a-3b78-8be0-03b93c8b24a9> /System/Library/PrivateFrameworks/WiFiPeerToPeer.framework/Versions/A/WiFiPeerToPeer
+       0x266643000 -        0x2667defff CoreWiFiOld.dylib (*) <d5cf0007-1f7f-393c-8141-02923aa69260> /System/Library/PrivateFrameworks/CoreWiFi.framework/Versions/A/CoreWiFiOld.dylib
+       0x107a63000 -        0x10831afff bluetoothd (*) <1c801f5b-f134-3f77-a281-425582ef695d> /usr/sbin/bluetoothd
+    0x7ff819440000 -     0x7ff81947aff7 libsystem_kernel.dylib (*) <9927a0a9-dfa8-3ffa-88d8-62055f37a137> /usr/lib/system/libsystem_kernel.dylib
+    0x7ff8194e1000 -     0x7ff81997bfec com.apple.CoreFoundation (6.9) <37924b83-2695-3956-b7ee-657a50e43c18> /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+    0x7ff8190f0000 -     0x7ff81918c3bf dyld (*) <ab17bf63-259b-3b48-8d70-863166a2191c> /usr/lib/dyld
+               0x0 - 0xffffffffffffffff ??? (*) <00000000-0000-0000-0000-000000000000> ???
+    0x7ff81947b000 -     0x7ff819486fff libsystem_pthread.dylib (*) <a9ba8a53-d774-3fe9-8bde-64187bff7ea9> /usr/lib/system/libsystem_pthread.dylib
+    0x7ff8192d6000 -     0x7ff81931cffd libdispatch.dylib (*) <895cad19-704c-3ff8-b148-23689a163b12> /usr/lib/system/libdispatch.dylib
+
+External Modification Summary:
+  Calls made by other processes targeting this process:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by this process:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by all processes on this machine:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+
+VM Region Summary:
+ReadOnly portion of Libraries: Total=667.4M resident=0K(0%) swapped_out_or_unallocated=667.4M(100%)
+Writable regions: Total=7.6G written=0K(0%) resident=0K(0%) swapped_out=0K(0%) unallocated=7.6G(100%)
+
+                                VIRTUAL   REGION 
+REGION TYPE                        SIZE    COUNT (non-coalesced) 
+===========                     =======  ======= 
+Activity Tracing                   256K        1 
+Dispatch continuations           192.0M        2 
+IOKit                               16K        2 
+Kernel Alloc Once                    8K        1 
+MALLOC                           321.3M       58 
+MALLOC guard page                   48K       12 
+SQLite page cache                  256K        2 
+STACK GUARD                       56.0M        8 
+Stack                             11.6M        8 
+Stack (reserved)                   520K        1         reserved VM address space (unallocated)
+Stack Guard                          4K        1 
+VM_ALLOCATE                         32K        4 
+VM_ALLOCATE (reserved)             7.1G       10         reserved VM address space (unallocated)
+__CTF                               824        1 
+__DATA                            26.8M      513 
+__DATA_CONST                      31.2M      332 
+__DATA_DIRTY                      1371K      189 
+__FONT_DATA                        2352        1 
+__INFO_FILTER                         8        1 
+__LINKEDIT                       183.3M       12 
+__OBJC_RO                         71.1M        1 
+__OBJC_RW                         2169K        2 
+__TEXT                           484.1M      530 
+dsce.got                           132K        1 
+dyld private memory                260K        2 
+mapped file                       31.8M        8 
+shared memory                      592K        7 
+===========                     =======  ======= 
+TOTAL                              8.5G     1710 
+TOTAL, minus reserved VM space     1.4G     1710 
+
+
+
+-----------
+Full Report
+-----------
+
+{"is_simulated":1,"app_name":"bluetoothd","timestamp":"2023-12-30 21:23:42.00 +0100","app_version":"","slice_uuid":"1c801f5b-f134-3f77-a281-425582ef695d","build_version":"","platform":1,"share_with_app_devs":0,"is_first_party":1,"bug_type":"309","os_version":"macOS 14.2.1 (23C71)","roots_installed":0,"incident_id":"F84F41BB-7C5E-4F14-8758-53C12B350E3E","name":"bluetoothd"}
+{
+  "uptime" : 8300,
+  "procRole" : "Unspecified",
+  "version" : 2,
+  "userID" : 0,
+  "deployVersion" : 210,
+  "modelCode" : "MacPro7,1",
+  "coalitionID" : 129,
+  "osVersion" : {
+    "train" : "macOS 14.2.1",
+    "build" : "23C71",
+    "releaseType" : "User"
+  },
+  "captureTime" : "2023-12-30 21:23:41.4580 +0100",
+  "codeSigningMonitor" : 0,
+  "incident" : "F84F41BB-7C5E-4F14-8758-53C12B350E3E",
+  "pid" : 16937,
+  "cpuType" : "X86-64",
+  "roots_installed" : 0,
+  "bug_type" : "309",
+  "procLaunch" : "2023-12-30 21:23:32.9423 +0100",
+  "procStartAbsTime" : 8300330863729,
+  "procName" : "bluetoothd",
+  "procPath" : "\/usr\/sbin\/bluetoothd",
+  "parentProc" : "launchd",
+  "parentPid" : 1,
+  "coalitionName" : "com.apple.bluetoothd",
+  "crashReporterKey" : "FEB0A921-4F36-4A58-0429-50CCFCE88F3F",
+  "throttleTimeout" : 10,
+  "codeSigningID" : "com.apple.bluetoothd",
+  "codeSigningTeamID" : "",
+  "codeSigningFlags" : 570509825,
+  "codeSigningValidationCategory" : 1,
+  "codeSigningTrustLevel" : 4294967295,
+  "sip" : "enabled",
+  "isSimulated" : 1,
+  "exception" : {"codes":"0x6000000000000012, 0x0000000000000002","reason":2,"message":"namespc 18 reason_code 0x0000000000000002","subtype":"GUARD_TYPE_USER","type":"EXC_GUARD","rawCodes":[6917529027641081874,2],"namespc":18},
+  "termination" : {"flags":518,"code":2,"namespace":"LIBSYSTEM","indicator":"Application Triggered Fault"},
+  "extMods" : {"caller":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"system":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"targeted":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"warnings":0},
+  "faultingThread" : 3,
+  "threads" : [{"id":199263,"frames":[{"imageOffset":6702,"symbol":"mach_msg2_trap","symbolLocation":10,"imageIndex":10},{"imageOffset":65082,"symbol":"mach_msg2_internal","symbolLocation":84,"imageIndex":10},{"imageOffset":35682,"symbol":"mach_msg_overwrite","symbolLocation":653,"imageIndex":10},{"imageOffset":7455,"symbol":"mach_msg","symbolLocation":19,"imageIndex":10},{"imageOffset":508341,"symbol":"__CFRunLoopServiceMachPort","symbolLocation":143,"imageIndex":11},{"imageOffset":502821,"symbol":"__CFRunLoopRun","symbolLocation":1371,"imageIndex":11},{"imageOffset":499970,"symbol":"CFRunLoopRunSpecific","symbolLocation":557,"imageIndex":11},{"imageOffset":1006462,"symbol":"CFRunLoopRun","symbolLocation":40,"imageIndex":11},{"imageOffset":192776,"imageIndex":9},{"imageOffset":25478,"symbol":"start","symbolLocation":1942,"imageIndex":12}],"threadState":{"r13":{"value":21592279046},"rax":{"value":16777263},"rflags":{"value":518},"cpu":{"value":0},"r14":{"value":2},"rsi":{"value":21592279046},"r8":{"value":0},"cr2":{"value":0},"rdx":{"value":8589934592},"r10":{"value":90172838379520},"r9":{"value":90172838379520},"r15":{"value":90172838379520},"rbx":{"value":140701925488320},"trap":{"value":133},"err":{"value":16777263},"r11":{"value":518},"rip":{"value":140703552510510},"rbp":{"value":140701925488160},"rsp":{"value":140701925488056},"r12":{"value":4294967295},"rcx":{"value":140701925488056},"flavor":"x86_THREAD_STATE","rdi":{"value":140701925488320}}},{"id":199264,"frames":[{"imageOffset":12626,"symbol":"__workq_kernreturn","symbolLocation":10,"imageIndex":10},{"imageOffset":11424,"symbol":"_pthread_wqthread","symbolLocation":416,"imageIndex":14},{"imageOffset":7063,"symbol":"start_wqthread","symbolLocation":15,"imageIndex":14}],"threadState":{"r13":{"value":0},"rax":{"value":33554800},"rflags":{"value":582},"cpu":{"value":0},"r14":{"value":1},"rsi":{"value":123145569389440},"r8":{"value":0},"cr2":{"value":0},"rdx":{"value":1},"r10":{"value":0},"r9":{"value":0},"r15":{"value":123145569389432},"rbx":{"value":123145569390592},"trap":{"value":133},"err":{"value":33554800},"r11":{"value":582},"rip":{"value":140703552516434},"rbp":{"value":123145569389376},"rsp":{"value":123145569389336},"r12":{"value":5193732},"rcx":{"value":123145569389336},"flavor":"x86_THREAD_STATE","rdi":{"value":256}}},{"id":199265,"frames":[{"imageOffset":12626,"symbol":"__workq_kernreturn","symbolLocation":10,"imageIndex":10},{"imageOffset":11424,"symbol":"_pthread_wqthread","symbolLocation":416,"imageIndex":14},{"imageOffset":7063,"symbol":"start_wqthread","symbolLocation":15,"imageIndex":14}],"threadState":{"r13":{"value":0},"rax":{"value":33554800},"rflags":{"value":582},"cpu":{"value":0},"r14":{"value":1},"rsi":{"value":123145569926016},"r8":{"value":240},"cr2":{"value":0},"rdx":{"value":2},"r10":{"value":0},"r9":{"value":140227831152640},"r15":{"value":123145569926008},"rbx":{"value":123145569927168},"trap":{"value":133},"err":{"value":33554800},"r11":{"value":582},"rip":{"value":140703552516434},"rbp":{"value":123145569925648},"rsp":{"value":123145569925608},"r12":{"value":5193733},"rcx":{"value":123145569925608},"flavor":"x86_THREAD_STATE","rdi":{"value":256}}},{"triggered":true,"id":199266,"threadState":{"r13":{"value":4432933008},"rax":{"value":33554961},"rflags":{"value":582},"cpu":{"value":0},"r14":{"value":74},"rsi":{"value":2},"r8":{"value":140228089211216},"cr2":{"value":0},"rdx":{"value":123145570460944},"r10":{"value":74},"r9":{"value":0},"r15":{"value":123145570460944},"rbx":{"value":108},"trap":{"value":133},"err":{"value":33554961},"r11":{"value":582},"rip":{"value":140703552557338,"matchesCrashFrame":1},"rbp":{"value":123145570461088},"rsp":{"value":123145570460936},"r12":{"value":123145570461024},"rcx":{"value":123145570460936},"flavor":"x86_THREAD_STATE","rdi":{"value":18}},"frames":[{"imageOffset":53530,"symbol":"os_fault_with_payload","symbolLocation":10,"imageIndex":10},{"imageOffset":1048440,"imageIndex":9},{"imageOffset":681442,"imageIndex":9},{"imageOffset":4284791,"imageIndex":9},{"imageOffset":4290032,"imageIndex":9},{"imageOffset":4149098,"imageIndex":9},{"imageOffset":4148098,"imageIndex":9},{"imageOffset":8934,"symbol":"_dispatch_call_block_and_release","symbolLocation":12,"imageIndex":15},{"imageOffset":13722,"symbol":"_dispatch_client_callout","symbolLocation":8,"imageIndex":15},{"imageOffset":38504,"symbol":"_dispatch_lane_serial_drain","symbolLocation":816,"imageIndex":15},{"imageOffset":41216,"symbol":"_dispatch_lane_invoke","symbolLocation":377,"imageIndex":15},{"imageOffset":80622,"symbol":"_dispatch_root_queue_drain_deferred_wlh","symbolLocation":271,"imageIndex":15},{"imageOffset":78845,"symbol":"_dispatch_workloop_worker_thread","symbolLocation":451,"imageIndex":15},{"imageOffset":11335,"symbol":"_pthread_wqthread","symbolLocation":327,"imageIndex":14},{"imageOffset":7063,"symbol":"start_wqthread","symbolLocation":15,"imageIndex":14}]},{"id":199267,"name":"StackLoop","threadState":{"r13":{"value":2203318223616},"rax":{"value":33554737},"rflags":{"value":663},"cpu":{"value":0},"r14":{"value":768},"rsi":{"value":2203318223616},"r8":{"value":0},"cr2":{"value":0},"rdx":{"value":0},"r10":{"value":0},"r9":{"value":160},"r15":{"value":0},"rbx":{"value":22},"trap":{"value":133},"err":{"value":33554737},"r11":{"value":663},"rip":{"value":140703552521678},"rbp":{"value":123145572073328},"rsp":{"value":123145572073176},"r12":{"value":295000000},"rcx":{"value":123145572073176},"flavor":"x86_THREAD_STATE","rdi":{"value":4432824688}},"frames":[{"imageOffset":17870,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":10},{"imageOffset":26524,"symbol":"_pthread_cond_wait","symbolLocation":1260,"imageIndex":14},{"imageOffset":682155,"imageIndex":9},{"imageOffset":25090,"symbol":"_pthread_start","symbolLocation":99,"imageIndex":14},{"imageOffset":7083,"symbol":"thread_start","symbolLocation":15,"imageIndex":14}]},{"id":199268,"frames":[{"imageOffset":6702,"symbol":"mach_msg2_trap","symbolLocation":10,"imageIndex":10},{"imageOffset":65082,"symbol":"mach_msg2_internal","symbolLocation":84,"imageIndex":10},{"imageOffset":35682,"symbol":"mach_msg_overwrite","symbolLocation":653,"imageIndex":10},{"imageOffset":7455,"symbol":"mach_msg","symbolLocation":19,"imageIndex":10},{"imageOffset":508341,"symbol":"__CFRunLoopServiceMachPort","symbolLocation":143,"imageIndex":11},{"imageOffset":502821,"symbol":"__CFRunLoopRun","symbolLocation":1371,"imageIndex":11},{"imageOffset":499970,"symbol":"CFRunLoopRunSpecific","symbolLocation":557,"imageIndex":11},{"imageOffset":1006462,"symbol":"CFRunLoopRun","symbolLocation":40,"imageIndex":11},{"imageOffset":700653,"imageIndex":9},{"imageOffset":25090,"symbol":"_pthread_start","symbolLocation":99,"imageIndex":14},{"imageOffset":7083,"symbol":"thread_start","symbolLocation":15,"imageIndex":14}],"threadState":{"r13":{"value":21592279046},"rax":{"value":16777263},"rflags":{"value":518},"cpu":{"value":0},"r14":{"value":2},"rsi":{"value":21592279046},"r8":{"value":0},"cr2":{"value":0},"rdx":{"value":8589934592},"r10":{"value":122075855454208},"r9":{"value":122075855454208},"r15":{"value":122075855454208},"rbx":{"value":123145572605664},"trap":{"value":133},"err":{"value":16777263},"r11":{"value":518},"rip":{"value":140703552510510},"rbp":{"value":123145572605504},"rsp":{"value":123145572605400},"r12":{"value":4294967295},"rcx":{"value":123145572605400},"flavor":"x86_THREAD_STATE","rdi":{"value":123145572605664}}},{"id":199269,"frames":[{"imageOffset":17870,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":10},{"imageOffset":26475,"symbol":"_pthread_cond_wait","symbolLocation":1211,"imageIndex":14},{"imageOffset":700857,"imageIndex":9},{"imageOffset":25090,"symbol":"_pthread_start","symbolLocation":99,"imageIndex":14},{"imageOffset":7083,"symbol":"thread_start","symbolLocation":15,"imageIndex":14}],"threadState":{"r13":{"value":4294967552},"rax":{"value":33554737},"rflags":{"value":582},"cpu":{"value":0},"r14":{"value":123145573146624},"rsi":{"value":4294967552},"r8":{"value":0},"cr2":{"value":0},"rdx":{"value":0},"r10":{"value":0},"r9":{"value":160},"r15":{"value":0},"rbx":{"value":22},"trap":{"value":133},"err":{"value":33554737},"r11":{"value":582},"rip":{"value":140703552521678},"rbp":{"value":123145573145680},"rsp":{"value":123145573145528},"r12":{"value":0},"rcx":{"value":123145573145528},"flavor":"x86_THREAD_STATE","rdi":{"value":4432825104}}},{"id":199270,"frames":[{"imageOffset":12626,"symbol":"__workq_kernreturn","symbolLocation":10,"imageIndex":10},{"imageOffset":11424,"symbol":"_pthread_wqthread","symbolLocation":416,"imageIndex":14},{"imageOffset":7063,"symbol":"start_wqthread","symbolLocation":15,"imageIndex":14}],"threadState":{"r13":{"value":0},"rax":{"value":33554800},"rflags":{"value":582},"cpu":{"value":0},"r14":{"value":0},"rsi":{"value":0},"r8":{"value":128},"cr2":{"value":0},"rdx":{"value":0},"r10":{"value":0},"r9":{"value":140227820695552},"r15":{"value":0},"rbx":{"value":123145574756352},"trap":{"value":133},"err":{"value":33554800},"r11":{"value":582},"rip":{"value":140703552516434},"rbp":{"value":123145574756304},"rsp":{"value":123145574756264},"r12":{"value":0},"rcx":{"value":123145574756264},"flavor":"x86_THREAD_STATE","rdi":{"value":4}}},{"id":199271,"frames":[],"threadState":{"r13":{"value":0},"rax":{"value":0},"rflags":{"value":512},"cpu":{"value":0},"r14":{"value":0},"rsi":{"value":0},"r8":{"value":0},"cr2":{"value":0},"rdx":{"value":0},"r10":{"value":0},"r9":{"value":0},"r15":{"value":0},"rbx":{"value":0},"trap":{"value":0},"err":{"value":0},"r11":{"value":0},"rip":{"value":0},"rbp":{"value":0},"rsp":{"value":0},"r12":{"value":0},"rcx":{"value":0},"flavor":"x86_THREAD_STATE","rdi":{"value":0}}}],
+  "usedImages" : [
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4434980864,
+    "CFBundleShortVersionString" : "900.4.2",
+    "CFBundleIdentifier" : "com.apple.iokit.IOUSBLib",
+    "size" : 49152,
+    "uuid" : "e84445fe-f7d0-3311-9abe-3be6b7ef605c",
+    "path" : "\/System\/Library\/Extensions\/IOUSBHostFamily.kext\/Contents\/PlugIns\/IOUSBLib.bundle\/Contents\/MacOS\/IOUSBLib",
+    "name" : "IOUSBLib",
+    "CFBundleVersion" : "900.4.2"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4441300992,
+    "size" : 573440,
+    "uuid" : "87e4ce5a-3775-329f-a74e-12ea9b602176",
+    "path" : "\/System\/Library\/PrivateFrameworks\/WirelessDiagnostics.framework\/Versions\/A\/Libraries\/libAWDProtobufBluetooth.dylib",
+    "name" : "libAWDProtobufBluetooth.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4433268736,
+    "CFBundleShortVersionString" : "16.0",
+    "CFBundleIdentifier" : "com.apple.framework.CoreWLAN",
+    "size" : 16384,
+    "uuid" : "ebde0ceb-4d1f-39cf-bbbe-0bf942b337ae",
+    "path" : "\/System\/Library\/Frameworks\/CoreWLAN.framework\/Versions\/A\/CoreWLAN",
+    "name" : "CoreWLAN",
+    "CFBundleVersion" : "1657"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4437577728,
+    "CFBundleShortVersionString" : "1.0",
+    "CFBundleIdentifier" : "com.apple.IO80211",
+    "size" : 16384,
+    "uuid" : "72fb270b-2d3a-39f4-82fd-1b8af408bd39",
+    "path" : "\/System\/Library\/PrivateFrameworks\/IO80211.framework\/Versions\/A\/IO80211",
+    "name" : "IO80211",
+    "CFBundleVersion" : "1"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4442480640,
+    "size" : 344064,
+    "uuid" : "d5cf0007-ff51-3af6-9c8e-1e8c75f15238",
+    "path" : "\/System\/Library\/PrivateFrameworks\/IO80211.framework\/Versions\/A\/IO80211Old.dylib",
+    "name" : "IO80211Old.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 6350266368,
+    "size" : 503808,
+    "uuid" : "d5cf0007-e25a-3348-a650-cf35c9c22c36",
+    "path" : "\/System\/Library\/Frameworks\/CoreWLAN.framework\/Versions\/A\/CoreWLANOld.dylib",
+    "name" : "CoreWLANOld.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4437704704,
+    "CFBundleShortVersionString" : "kCoreWiFiMarketingVersion",
+    "CFBundleIdentifier" : "com.apple.CoreWiFi",
+    "size" : 16384,
+    "uuid" : "c9299165-c74b-31ab-b1d9-f4b9707fd273",
+    "path" : "\/System\/Library\/PrivateFrameworks\/CoreWiFi.framework\/Versions\/A\/CoreWiFi",
+    "name" : "CoreWiFi",
+    "CFBundleVersion" : "kCoreWiFiProjectVersion"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 8308379648,
+    "CFBundleShortVersionString" : "520.34.0",
+    "CFBundleIdentifier" : "com.apple.WiFiPeerToPeer",
+    "size" : 163840,
+    "uuid" : "d5cf0007-7a9a-3b78-8be0-03b93c8b24a9",
+    "path" : "\/System\/Library\/PrivateFrameworks\/WiFiPeerToPeer.framework\/Versions\/A\/WiFiPeerToPeer",
+    "name" : "WiFiPeerToPeer",
+    "CFBundleVersion" : "520.34"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 10307776512,
+    "size" : 1687552,
+    "uuid" : "d5cf0007-1f7f-393c-8141-02923aa69260",
+    "path" : "\/System\/Library\/PrivateFrameworks\/CoreWiFi.framework\/Versions\/A\/CoreWiFiOld.dylib",
+    "name" : "CoreWiFiOld.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4423299072,
+    "size" : 9142272,
+    "uuid" : "1c801f5b-f134-3f77-a281-425582ef695d",
+    "path" : "\/usr\/sbin\/bluetoothd",
+    "name" : "bluetoothd"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703552503808,
+    "size" : 241656,
+    "uuid" : "9927a0a9-dfa8-3ffa-88d8-62055f37a137",
+    "path" : "\/usr\/lib\/system\/libsystem_kernel.dylib",
+    "name" : "libsystem_kernel.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64h",
+    "base" : 140703553163264,
+    "CFBundleShortVersionString" : "6.9",
+    "CFBundleIdentifier" : "com.apple.CoreFoundation",
+    "size" : 4829165,
+    "uuid" : "37924b83-2695-3956-b7ee-657a50e43c18",
+    "path" : "\/System\/Library\/Frameworks\/CoreFoundation.framework\/Versions\/A\/CoreFoundation",
+    "name" : "CoreFoundation",
+    "CFBundleVersion" : "2202"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703549030400,
+    "size" : 639936,
+    "uuid" : "ab17bf63-259b-3b48-8d70-863166a2191c",
+    "path" : "\/usr\/lib\/dyld",
+    "name" : "dyld"
+  },
+  {
+    "size" : 0,
+    "source" : "A",
+    "base" : 0,
+    "uuid" : "00000000-0000-0000-0000-000000000000"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703552745472,
+    "size" : 49152,
+    "uuid" : "a9ba8a53-d774-3fe9-8bde-64187bff7ea9",
+    "path" : "\/usr\/lib\/system\/libsystem_pthread.dylib",
+    "name" : "libsystem_pthread.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703551021056,
+    "size" : 290814,
+    "uuid" : "895cad19-704c-3ff8-b148-23689a163b12",
+    "path" : "\/usr\/lib\/system\/libdispatch.dylib",
+    "name" : "libdispatch.dylib"
+  }
+],
+  "sharedCache" : {
+  "base" : 140703548334080,
+  "size" : 25769803776,
+  "uuid" : "2a323ece-7dbf-33e2-9ef3-3390c59ddc35"
+},
+  "vmSummary" : "ReadOnly portion of Libraries: Total=667.4M resident=0K(0%) swapped_out_or_unallocated=667.4M(100%)\nWritable regions: Total=7.6G written=0K(0%) resident=0K(0%) swapped_out=0K(0%) unallocated=7.6G(100%)\n\n                                VIRTUAL   REGION \nREGION TYPE                        SIZE    COUNT (non-coalesced) \n===========                     =======  ======= \nActivity Tracing                   256K        1 \nDispatch continuations           192.0M        2 \nIOKit                               16K        2 \nKernel Alloc Once                    8K        1 \nMALLOC                           321.3M       58 \nMALLOC guard page                   48K       12 \nSQLite page cache                  256K        2 \nSTACK GUARD                       56.0M        8 \nStack                             11.6M        8 \nStack (reserved)                   520K        1         reserved VM address space (unallocated)\nStack Guard                          4K        1 \nVM_ALLOCATE                         32K        4 \nVM_ALLOCATE (reserved)             7.1G       10         reserved VM address space (unallocated)\n__CTF                               824        1 \n__DATA                            26.8M      513 \n__DATA_CONST                      31.2M      332 \n__DATA_DIRTY                      1371K      189 \n__FONT_DATA                        2352        1 \n__INFO_FILTER                         8        1 \n__LINKEDIT                       183.3M       12 \n__OBJC_RO                         71.1M        1 \n__OBJC_RW                         2169K        2 \n__TEXT                           484.1M      530 \ndsce.got                           132K        1 \ndyld private memory                260K        2 \nmapped file                       31.8M        8 \nshared memory                      592K        7 \n===========                     =======  ======= \nTOTAL                              8.5G     1710 \nTOTAL, minus reserved VM space     1.4G     1710 \n",
+  "legacyInfo" : {
+  "threadTriggered" : {
+
+  }
+},
+  "logWritingSignature" : "ecaab0bb431cedb5896c5deaea8e6088cdd99cc8"
+}
+
