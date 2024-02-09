@@ -11,7 +11,8 @@
 - 64 GB DDR4-3000, XMP enabled
 - Wifi/BT via BRCM20702
 - Windows 10 on a 2nd SSD
-- MacOS Sonoma 14.0 on a 3rd SSD (with expected WIFI not working, etc.)
+- Windows 11 23H2 hosted in VMWare Fusion
+- MacOS Sonoma 14.0 on a 3rd SSD
 - [OC Version 0.9.8](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.8)
 
 # What is working?
@@ -24,7 +25,8 @@
 - Screen 1: 4k via DP  
 - Screen 2: 1080p via HDMI  
 - DRM Content (Netflix, Amazon Prime, Apple TV+)  
-- Wifi/BT working after OCLP root patching
+- Wifi/BT working after OCLP root patching  
+	After the updates/upgrades/patching I set *Secure Boot Model* to **Default** in order to use VMWare Fusion again.
 - all iServices (iMessage, iCloud, AirDrop, unlock with Apple Watch)  
 - CPU temperature and fan speeds in iStats and/or Intel Power Gadget  
 - USB Ports mapped: 15 in use out of 21 possibly available  
@@ -103,7 +105,8 @@ Attached an example of the bluetoothd process crash as seen in the Console app: 
 
 2. Alder Lake adaptations done according to: [ChrisWayg](https://chriswayg.gitbook.io/opencore-visual-beginners-guide/advanced-topics/using-alder-lake)
 
-3. Root patching using OCLP [perez987](https://github.com/perez987/macOS-14-Sonoma-on-z390-with-OpenCore)
+3. Root patching using OCLP [perez987](https://github.com/perez987/Fenvi-wifi-back-on-macOS-Sonoma-by-OCLP/blob/main/README.md)  
+	
 
 ````text
 Before just copying a config.plist from the internet go through the guids and start from skratch  
