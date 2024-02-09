@@ -18,7 +18,7 @@
 
 **Almost everything:**
   
-- MacOS Sonoma 14.3 
+- MacOS Sonoma 14.3.1
 - Audio  
 - DP and HDMI via dGPU  
 - Screen 1: 4k via DP  
@@ -36,7 +36,7 @@
   - 3x USB 3.2 Gen 1 on the back     
 	- 3x with USB 2.0 personality  
   - 2x USB-C (one back and front with up to 10 Gbps)  
-- Continuity Camera with iPhone 14 Pro  
+- Continuity Camera with iPhone 15 Pro Max  
 
 # Used Kexts?
 
@@ -83,12 +83,14 @@ See result [before](./images/MacPro7,1-Geekbench_Browser_without_CPUFriend.mht.p
 
 For comparison reason I've uploaded the Geekbench reference done on [Windows 10 22H2](./images/MacPro7,1-Geekbench_Windows_Reference.png). On Windows a slightly better multi-core performance can be measured compared to the CPUFriend.kext version used on MacOS.
 
-At the moment I'm being quite satisfied with the system, nevertheless I'm struggling with a quite strange issue since a few weeks. Even before the update to Sonoma my system started to crash randomly. Out of sudden all the USB devices, including bluetooth devices gets disconnected. Up to know only a reboot resolves that. While I'm able to use the computer using Remote Pro on my iPhone I checked IORegistryExplorer after a crash and saw that my whole XHCI controller gets disconnected. Also quite interesting, that happens around 1:30-1:40 am daily. So, something smashes my USB mapping. If there's someone with an helping hand out there, please get back to me.
+At the moment I'm being quite satisfied with the system, nevertheless I'm struggling with a quite strange issue since a few weeks. Even before the update to Sonoma my system started to crash randomly. Out of sudden all the USB devices, including bluetooth devices gets disconnected. Up to know only a reboot resolves that. ~~While I'm able to use the computer using Remote Pro on my iPhone I checked IORegistryExplorer after a crash and saw that my whole XHCI controller gets disconnected.~~ Also quite interesting, that happens around 1:30-1:40 am daily. So, something smashes my USB mapping. If there's someone with an helping hand out there, please get back to me.
 Attached an example of the bluetoothd process crash as seen in the Console app: [crash.txt](./crash.txt)
 
 **[Update]** After removing possible root causes step by step (i. e. all external USB devices), I also exchagned my Logitech mouse by the Logitech Bolt version. Since that day, I've not had any bluetoothd process crash. So, I'm quite obtimistic that I've found the root cause of my issues. Maybe the bluetooth implementation of the Bolt based keyboard and Unifying mouse resulted in that behaviour.
 
 **[Update 2]** After a not many weeks the issue came back, so I decided to remove the Logitech Bolt and switch to native Bluetooth for mouse and keyboard until I get a clue what's going on.
+
+**[Update 3]** So, since I've somehow pi**** about that issue I've checked all logs and decided to remove a punch of software like Sleep Control Center since log files has shown some power related interrupt before the bluetoothd server died. What shall I say? The system runs some days w/o any issue now. May I've found the root cause?
 
 # Outlook?
 ...
