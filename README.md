@@ -10,7 +10,7 @@
 - AMD Radeon RX 580 8GB dGPU
 - 64 GB DDR4-3000, XMP enabled
 - Wifi/BT via BRCM20702
-- Windows 11 23H@ on a 2nd SSD
+- Windows 11 23H2 on a 2nd SSD
 - MacOS Sonoma 14.0 on a 3rd SSD
 - Windows 11 23H2 hosted in VMWare Fusion
 
