@@ -14,13 +14,13 @@
 - MacOS Sonoma 14.0 on a 3rd SSD
 - Windows 11 23H2 hosted in VMWare Fusion
 
-**[OC Version 1.0.0](https://github.com/acidanthera/OpenCorePkg/releases/tag/1.0.0)**
+**[OC Version 1.0.1](https://github.com/acidanthera/OpenCorePkg/releases/tag/1.0.1)**
 
 # What is working?
 
 **Almost everything:**
   
-- MacOS Sonoma 14.6
+- MacOS Sonoma 14.6.1
 - Audio  
 - DP and HDMI via dGPU  
 - Screen 1: 4k via DP  
@@ -46,11 +46,11 @@
 | **Kext**  | **Version**  |
 |:----------|:----------|
 | [Lilu](https://github.com/acidanthera/Lilu/releases/tag/1.6.8)    | 1.6.8
-| [AppleALC](https://github.com/acidanthera/AppleALC/releases/tag/1.9.0)| 1.9.0
+| [AppleALC](https://github.com/acidanthera/AppleALC/releases/tag/1.9.1)| 1.9.1
 | [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases/tag/1.6.7)    | 1.6.7
 | [VirtualSMC](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.3)    | 1.3.3
-| [SMCProcessor](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.1)    | 1.3.1
-| [SMCSuperIO](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.1)    | 1.3.1
+| [SMCProcessor](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.3)    | 1.3.3
+| [SMCSuperIO](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.3)    | 1.3.3
 | [CpuTopologyRebuild](https://github.com/b00t0x/CpuTopologyRebuild/releases/tag/1.1.1)    | 1.1.1
 | [CpuTscSync](https://github.com/acidanthera/CpuTscSync/releases/tag/1.1.1)    | 1.1.1
 | [NVMeFix](https://github.com/acidanthera/NVMeFix/releases/tag/1.1.2)    | 1.1.2
