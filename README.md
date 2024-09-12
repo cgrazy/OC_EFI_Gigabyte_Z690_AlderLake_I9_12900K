@@ -11,7 +11,7 @@
 - 64 GB DDR4-3000, XMP enabled
 - Wifi/BT via BRCM20702
 - Windows 11 23H2 on a 2nd SSD
-- MacOS Sequoia 15.0 RC on a 3rd SSD [[1]](# Issues with MacOS Sequoia 15.0 RC)
+- MacOS Sequoia 15.0 RC on a 3rd SSD [[1]](#issues-with-macos-sequoia-15.0-rc)
 - Windows 11 23H2 hosted in VMWare Fusion
 
 **[OC Version 1.0.1](https://github.com/acidanthera/OpenCorePkg/releases/tag/1.0.1)**
