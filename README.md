@@ -2,8 +2,13 @@
 
 ![About This Mac](./images/AboutThisMac.png "About This Mac")
 
+# Motivation?
 
- **OpenCore EFI for Intel Alder Lake**
+I set up my first hack based on a **AMD Ryzen 9 3900X** and a **Gigabyte X570 Aorus Elite** mainboard. After having the USB mapped as expected, that hack was working well over the years. Survived the updates to Monterey and Ventura w/o issues. But with Venturae more and more software was not working any longer. So, I was running into more issues with **Photoshop** and **Virtualbox** was not working any longer at all. Especially Virtualbox was needed to get UEFI Secure Boot working since I used Debian to sign the OpenCore EFI files.  
+After that I decided to switch to Intel by just replacing the mainboard and CPU.
+
+# Solution
+### OpenCore EFI for Intel Alder Lake**
 
 - Intel i9-12900K (All cores (P+E+HT) activated)
 - Gigabyte Z690 Aorus Elite DDR4 AX (BIOS version F21)
@@ -17,9 +22,9 @@
 
 **[OC Version 1.0.1](https://github.com/acidanthera/OpenCorePkg/releases/tag/1.0.1)**
 
-# What is working?
+### What is working
 
-**Almost everything:**
+#### Almost everything:
   
 - MacOS Sonoma 14.6.1
 - Audio  
@@ -31,21 +36,19 @@
 	After the updates/upgrades/patching I set *Secure Boot Model* to **Default** in order to use VMWare Fusion again.
 - all iServices (iMessage, iCloud, AirDrop, unlock with Apple Watch)  
 - CPU temperature and fan speeds in iStats and/or Intel Power Gadget  
-- USB Ports mapped: 15 in use out of 21 possibly available  
-  - 2x USB 2.0 on the front panel via internal USB header (one port in USB mapping)  
-  - 4x USB 2.0 on the back (one port in USB mapping)  
-  - 1x RGB Fusion 2.0  
-  - 2x USB 3.2 Gen 1 on the front via internal USB header  
-  - 2x USB 3.2 Gen 2 on the back  
-  - 3x USB 3.2 Gen 1 on the back     
-	- 3x with USB 2.0 personality (to connect WebCam via KVM switch to monitor and to connect IPad to the hackintosh). 
-  - 2x USB-C (one back and front with up to 10 Gbps)  
+- USB Ports mapped: 15 in use out of 21 possibly available
+    - 2x USB 2.0 on the front panel via internal USB header (one port in USB mapping)  
+    - 4x USB 2.0 on the back (one port in USB mapping)  
+    - 1x RGB Fusion 2.0  
+    - 2x USB 3.2 Gen 1 on the front via internal USB header  
+    - 2x USB 3.2 Gen 2 on the back  
+    - 3x USB 3.2 Gen 1 on the back     
+    - 3x with USB 2.0 personality (to connect WebCam via KVM switch to monitor and to connect IPad to the hackintosh). 
+    - 2x USB-C (one back and front with up to 10 Gbps)
 - Continuity Camera with iPhone 15 Pro Max  
 
-# Issues with MacOS Sequoia
-[1] Continuity Camera is not working 
 
-# Used Kexts?
+### Used Kexts
 
 | **Kext**  | **Version**  |
 |:----------|:----------|
@@ -68,37 +71,30 @@
 | [IO80211FamilyLegacy](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Wifi/IO80211FamilyLegacy-v1.0.0.zip) | 1.0.0
 | [AirPortBrcmNIC](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Wifi/IO80211FamilyLegacy-v1.0.0.zip) | 1.0.0
 
-# Updates to Sonoma
+### Updates to Sonoma
 - AMFIPass version 1.4.1 taken from [here](https://github.com/dortania/OpenCore-Legacy-Patcher/tree/main/payloads/Kexts/Acidanthera)
 - IOSkyWalkFamily version 1.2.0 taken from [here](https://github.com/dortania/OpenCore-Legacy-Patcher/tree/main/payloads/Kexts/Wifi)
 - OpenCore Lagacy Patcher 2.0 taken from [here](https://github.com/dortania/OpenCore-Legacy-Patcher/actions/runs/10835044097)  
-See follow for guide to enable WiFi again
+See [guide](#root-patching-using-olcp) to enable WiFi again
 
-# Motivation?
+#### Issues with MacOS Sequoia
+[1] Continuity Camera is not working 
 
-I set up my first hack based on a **AMD Ryzen 9 3900X** and a **Gigabyte X570 Aorus Elite** mainboard. After having the USB mapped as expected, that hack was working well over the years. Survived the updates to Monterey and Ventura w/o issues. But with Venturae more and more software was not working any longer. So, I was running into more issues with **Photoshop** and **Virtualbox** was not working any longer at all. Especially Virtualbox was needed to get UEFI Secure Boot working since I used Debian to sign the OpenCore EFI files.  
-After that I decided to switch to Intel by just replacing the mainboard and CPU.
 
-# What doesn't work well?
+### Current State
 
-Sleep at all, I guess. Haven't had the chance to get into sleep yet.
+bluetoothd process crashes sometime. Currently I suspect an update of Logitech+ software crashing the bluetoothd deamon.
 
-# Current State?
-
-No issues currently seen.
-
-# Outlook?
+### Outlook
 
 No plans except updates.
 
 
-# Followed Guides?
+### Followed Guides?
 
 1. Followed the Comet Lake guide provided by Dortania: 
 [Dortania Team](https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html)
-
 2. Alder Lake adaptations done according to: [ChrisWayg](https://chriswayg.gitbook.io/opencore-visual-beginners-guide/advanced-topics/using-alder-lake)
-
 3. Root patching using OCLP [perez987](https://github.com/perez987/Fenvi-wifi-back-on-macOS-Sonoma-by-OCLP/blob/main/README.md)  
 	
 
