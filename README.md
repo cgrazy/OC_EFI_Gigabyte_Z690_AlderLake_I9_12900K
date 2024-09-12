@@ -94,7 +94,7 @@ No plans except updates.
 
 # Followed Guides?
 
-1. Followed the Comet Lake guide provided by Dorania: 
+1. Followed the Comet Lake guide provided by Dortania: 
 [Dortania Team](https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html)
 
 2. Alder Lake adaptations done according to: [ChrisWayg](https://chriswayg.gitbook.io/opencore-visual-beginners-guide/advanced-topics/using-alder-lake)
