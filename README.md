@@ -12,6 +12,7 @@
 - Wifi/BT via BRCM20702
 - Windows 11 23H2 on a 2nd SSD
 - MacOS Sequoia 15.0 RC on a 3rd SSD [[1]](#issues-with-macos-sequoia)
+  [Updates](#updates-to-sonoma)
 - Windows 11 23H2 hosted in VMWare Fusion
 
 **[OC Version 1.0.1](https://github.com/acidanthera/OpenCorePkg/releases/tag/1.0.1)**
@@ -67,6 +68,11 @@
 | [IO80211FamilyLegacy](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Wifi/IO80211FamilyLegacy-v1.0.0.zip) | 1.0.0
 | [AirPortBrcmNIC](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Wifi/IO80211FamilyLegacy-v1.0.0.zip) | 1.0.0
 
+# Updates to Sonoma
+- AMFIPass version 1.4.1 taken from [here](https://github.com/dortania/OpenCore-Legacy-Patcher/tree/main/payloads/Kexts/Acidanthera)
+- IOSkyWalkFamily version 1.2.0 taken from [here](https://github.com/dortania/OpenCore-Legacy-Patcher/tree/main/payloads/Kexts/Wifi)
+- OpenCore Lagacy Patcher 2.0 taken from [here](https://github.com/dortania/OpenCore-Legacy-Patcher/actions/runs/10835044097)  
+See follow for guide to enable WiFi again
 
 # Motivation?
 
