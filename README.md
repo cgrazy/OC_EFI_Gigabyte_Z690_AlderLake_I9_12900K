@@ -11,7 +11,7 @@
 - 64 GB DDR4-3000, XMP enabled
 - Wifi/BT via BRCM20702
 - Windows 11 23H2 on a 2nd SSD
-- MacOS Sonoma 14.0 on a 3rd SSD
+- MacOS Sequoia 15.0 RC on a 3rd SSD [[1]](# Issues with MacOS Sequoia 15.0 RC)
 - Windows 11 23H2 hosted in VMWare Fusion
 
 **[OC Version 1.0.1](https://github.com/acidanthera/OpenCorePkg/releases/tag/1.0.1)**
@@ -40,6 +40,9 @@
 	- 3x with USB 2.0 personality (to connect WebCam via KVM switch to monitor and to connect IPad to the hackintosh). 
   - 2x USB-C (one back and front with up to 10 Gbps)  
 - Continuity Camera with iPhone 15 Pro Max  
+
+# Issues with MacOS Sequoia 15.0 RC
+[1] Continuity Camera is not working 
 
 # Used Kexts?
 
