@@ -75,7 +75,7 @@ After that I decided to switch to Intel by just replacing the mainboard and CPU.
 - AMFIPass version 1.4.1 taken from [here](https://github.com/dortania/OpenCore-Legacy-Patcher/tree/main/payloads/Kexts/Acidanthera)
 - IOSkyWalkFamily version 1.2.0 taken from [here](https://github.com/dortania/OpenCore-Legacy-Patcher/tree/main/payloads/Kexts/Wifi)
 - OpenCore Lagacy Patcher 2.0 taken from [here](https://github.com/dortania/OpenCore-Legacy-Patcher/actions/runs/10835044097)  
-See [guide](#root-patching-using-olcp) to enable WiFi again
+See [guide](https://github.com/perez987/Fenvi-wifi-back-on-macOS-Sonoma-by-OCLP/blob/main/README.md) to enable WiFi again
 
 #### Issues with MacOS Sequoia
 [1] Continuity Camera is not working 
