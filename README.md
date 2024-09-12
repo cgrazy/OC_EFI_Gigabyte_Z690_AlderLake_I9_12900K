@@ -11,7 +11,7 @@
 - 64 GB DDR4-3000, XMP enabled
 - Wifi/BT via BRCM20702
 - Windows 11 23H2 on a 2nd SSD
-- MacOS Sequoia 15.0 RC on a 3rd SSD [[1]](#-issues-with-macos-sequoia-15.0-rc)
+- MacOS Sequoia 15.0 RC on a 3rd SSD [[1]](#issues-with-macos-sequoia)
 - Windows 11 23H2 hosted in VMWare Fusion
 
 **[OC Version 1.0.1](https://github.com/acidanthera/OpenCorePkg/releases/tag/1.0.1)**
@@ -41,7 +41,7 @@
   - 2x USB-C (one back and front with up to 10 Gbps)  
 - Continuity Camera with iPhone 15 Pro Max  
 
-# Issues with MacOS Sequoia 15.0 RC
+# Issues with MacOS Sequoia
 [1] Continuity Camera is not working 
 
 # Used Kexts?
