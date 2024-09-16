@@ -16,7 +16,7 @@ After that I decided to switch to Intel by just replacing the mainboard and CPU.
 - 64 GB DDR4-3000, XMP enabled
 - Wifi/BT via BRCM20702
 - Windows 11 23H2 on a 2nd SSD
-- MacOS Sequoia 15.0 RC on a 3rd SSD [[1]](#issues-with-macos-sequoia)
+- MacOS Sequoia 15.0 RC on a 3rd SSD
   [Updates](#updates-to-sonoma)
 - Windows 11 23H2 hosted in VMWare Fusion
 
@@ -24,9 +24,9 @@ After that I decided to switch to Intel by just replacing the mainboard and CPU.
 
 ### What is working
 
-#### Almost everything:
+#### Almost everything:[[1]](#issues-with-macos-sequoia)
   
-- MacOS Sonoma 14.6.1
+- MacOS Sequoia 15.0
 - Audio  
 - DP and HDMI via dGPU  
 - Screen 1: 4k via DP  
@@ -77,12 +77,12 @@ After that I decided to switch to Intel by just replacing the mainboard and CPU.
 - OpenCore Lagacy Patcher 2.0 taken from [here](https://github.com/dortania/OpenCore-Legacy-Patcher/actions/runs/10835044097)  
 See [guide](https://github.com/perez987/Fenvi-wifi-back-on-macOS-Sonoma-by-OCLP/blob/main/README.md) to enable WiFi again
 
-#### Issues with MacOS Sequoia
-[1] Continuity Camera is not working 
-
-
+#### Issues with MacOS Sequoia  
+There are two minor issues:  
+- WiFi is not connection automatically w/o issue after boot  
+- About This Mac shows Intel Xeon W CPU
+ 
 ### Current State
-
 bluetoothd process crashes sometime. Currently I suspect an update of Logitech+ software crashing the bluetoothd deamon.
 
 ### Outlook
