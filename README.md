@@ -79,15 +79,15 @@ See [guide](https://github.com/perez987/Fenvi-wifi-back-on-macOS-Sonoma-by-OCLP/
 
 #### Issues with MacOS Sequoia  
 There are two minor issues:  
-- WiFi is not connection automatically w/o issue after boot  
-- About This Mac shows Intel Xeon W CPU
+~~- WiFi is not connection automatically w/o issue after boot~~~  
+- About This Mac shows Intel Xeon W CPU even using revcpuname patch.
  
 ### Current State
-bluetoothd process crashes sometime. Currently I suspect an update of Logitech+ software crashing the bluetoothd deamon.
+bluetoothd process crashes sometime.
 
 ### Outlook
 
-No plans except updates.
+No plans for updates.
 
 
 ### Followed Guides?
