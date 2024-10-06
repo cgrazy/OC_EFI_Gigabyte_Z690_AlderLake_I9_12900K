@@ -26,7 +26,7 @@ After that I decided to switch to Intel by just replacing the mainboard and CPU.
 
 #### Almost everything:[[1]](#issues-with-macos-sequoia)
   
-- MacOS Sequoia 15.0
+- MacOS Sequoia 15.0.1
 - Audio  
 - DP and HDMI via dGPU  
 - Screen 1: 4k via DP  
@@ -50,8 +50,8 @@ After that I decided to switch to Intel by just replacing the mainboard and CPU.
 
 ### Used Kexts
 
-| **Kext**  | **Version**  |
-|:----------|:----------|
+| **Kext**  | **Version**  | **Comment** |   
+|:----------|:----------|:--|   
 | [Lilu](https://github.com/acidanthera/Lilu/releases/tag/1.6.8)    | 1.6.8
 | [AppleALC](https://github.com/acidanthera/AppleALC/releases/tag/1.9.1)| 1.9.1
 | [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases/tag/1.6.7)    | 1.6.7
@@ -66,7 +66,7 @@ After that I decided to switch to Intel by just replacing the mainboard and CPU.
 | [RestrictEvents](https://github.com/acidanthera/RestrictEvents/releases/tag/1.1.4) | 1.1.4
 | [CPUFriend](https://github.com/acidanthera/CPUFriend/releases/tag/1.2.8) | 1.2.8
 | [AMFIPass](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Acidanthera/AMFIPass-v1.4.0-RELEASE.zip) | 1.4.0
-| [BlueToolFixup](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Acidanthera/BlueToolFixup-v2.6.8-RELEASE.zip) | 2.6.8
+| [BlueToolFixup](https://github.com/acidanthera/BrcmPatchRAM/actions/runs/11143115875) | 2.6.9 | not released
 | [IOSkywalkFamily](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Wifi/IOSkywalkFamily-v1.1.0.zip) | 1.1.0
 | [IO80211FamilyLegacy](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Wifi/IO80211FamilyLegacy-v1.0.0.zip) | 1.0.0
 | [AirPortBrcmNIC](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Wifi/IO80211FamilyLegacy-v1.0.0.zip) | 1.0.0
