@@ -20,7 +20,7 @@ After that I decided to switch to Intel by just replacing the mainboard and CPU.
   [Updates](#updates-to-sonoma)
 - Windows 11 23H2 hosted in VMWare Fusion
 
-**[OC Version 1.0.1](https://github.com/acidanthera/OpenCorePkg/releases/tag/1.0.1)**
+**[OC Version 1.0.2](https://github.com/acidanthera/OpenCorePkg/releases/tag/1.0.2)**
 
 ### What is working
 
@@ -52,20 +52,20 @@ After that I decided to switch to Intel by just replacing the mainboard and CPU.
 
 | **Kext**  | **Version**  | **Comment** |   
 |:----------|:----------|:--|   
-| [Lilu](https://github.com/acidanthera/Lilu/releases/tag/1.6.8)    | 1.6.8
-| [AppleALC](https://github.com/acidanthera/AppleALC/releases/tag/1.9.1)| 1.9.1
-| [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases/tag/1.6.7)    | 1.6.7
-| [VirtualSMC](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.3)    | 1.3.3
-| [SMCProcessor](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.3)    | 1.3.3
-| [SMCSuperIO](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.3)    | 1.3.3
+| [Lilu](https://github.com/acidanthera/Lilu/releases/tag/1.6.9)    | 1.6.9
+| [AppleALC](https://github.com/acidanthera/AppleALC/releases/tag/1.9.2)| 1.9.2
+| [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases/tag/1.6.8)    | 1.6.8
+| [VirtualSMC](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.4)    | 1.3.4
+| [SMCProcessor](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.4)    | 1.3.4
+| [SMCSuperIO](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.4)    | 1.3.4
 | [CpuTopologyRebuild](https://github.com/b00t0x/CpuTopologyRebuild/releases/tag/1.1.1)    | 1.1.1
 | [CpuTscSync](https://github.com/acidanthera/CpuTscSync/releases/tag/1.1.1)    | 1.1.1
 | [NVMeFix](https://github.com/acidanthera/NVMeFix/releases/tag/1.1.2)    | 1.1.2
 | [LucyRTL8125Ethernet](https://www.insanelymac.com/forum/files/file/1004-lucyrtl8125ethernet/)    | 1.1.0
 | [RadeonSensor](https://github.com/aluveitie/RadeonSensor/releases/tag/0.3.3) | 0.3.3
-| [RestrictEvents](https://github.com/acidanthera/RestrictEvents/releases/tag/1.1.4) | 1.1.4
+| [RestrictEvents](https://github.com/acidanthera/RestrictEvents/releases/tag/1.1.5) | 1.1.5
 | [CPUFriend](https://github.com/acidanthera/CPUFriend/releases/tag/1.2.8) | 1.2.8
-| [AMFIPass](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Acidanthera/AMFIPass-v1.4.0-RELEASE.zip) | 1.4.0
+| [AMFIPass](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Acidanthera/AMFIPass-v1.4.1-RELEASE.zip) | 1.4.1
 | [BlueToolFixup](https://github.com/acidanthera/BrcmPatchRAM/actions/runs/11143115875) | 2.6.9 | not released
 | [IOSkywalkFamily](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Wifi/IOSkywalkFamily-v1.1.0.zip) | 1.1.0
 | [IO80211FamilyLegacy](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Wifi/IO80211FamilyLegacy-v1.0.0.zip) | 1.0.0
@@ -78,12 +78,36 @@ After that I decided to switch to Intel by just replacing the mainboard and CPU.
 See [guide](https://github.com/perez987/Fenvi-wifi-back-on-macOS-Sonoma-by-OCLP/blob/main/README.md) to enable WiFi again
 
 #### Issues with MacOS Sequoia  
-There are two minor issues:  
+There are (minor) issues:  
+  - bluetoothd process is crashing with:
+      
+````text  
+  Exception Type:        EXC_GUARD  
+  Exception Codes:       GUARD_TYPE_USER  
+  Exception Codes:       0x6000000000000012, 0x0000000000000002  
+[...]
+Thread 1 Crashed:  
+0   libsystem_kernel.dylib        	    0x7ff80abfb48a os_fault_with_payload + 10  
+1   bluetoothd                    	       0x1002b63da 0x1001fa000 + 771034  
+2   bluetoothd                    	       0x10067ca6a 0x1001fa000 + 4729450  
+3   bluetoothd                    	       0x10067e0af 0x1001fa000 + 4735151  
+4   bluetoothd                    	       0x10065c200 0x1001fa000 + 4596224  
+5   bluetoothd                    	       0x10065bdea 0x1001fa000 + 4595178  
+6   libdispatch.dylib             	    0x7ff80aa88455 _dispatch_call_block_and_release + 12  
+7   libdispatch.dylib             	    0x7ff80aa897e2 _dispatch_client_callout + 8  
+8   libdispatch.dylib             	    0x7ff80aa8f95b _dispatch_lane_serial_drain + 739  
+9   libdispatch.dylib             	    0x7ff80aa903e2 _dispatch_lane_invoke + 377  
+10  libdispatch.dylib             	    0x7ff80aa9a0db _dispatch_root_queue_drain_deferred_wlh + 271  
+11  libdispatch.dylib             	    0x7ff80aa999dc _dispatch_workloop_worker_thread + 659  
+12  libsystem_pthread.dylib       	    0x7ff80ac2dc7f _pthread_wqthread + 326  
+13  libsystem_pthread.dylib       	    0x7ff80ac2cbdb start_wqthread + 15  
+```` 
+
 ~~- WiFi is not connection automatically w/o issue after boot~~~  
-- About This Mac shows Intel Xeon W CPU even using revcpuname patch.
+~~- About This Mac shows Intel Xeon W CPU even using revcpuname patch.~~
  
 ### Current State
-bluetoothd process crashes sometime.
+
 
 ### Outlook
 
