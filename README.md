@@ -20,13 +20,13 @@ After that I decided to switch to Intel by just replacing the mainboard and CPU.
   [Updates](#updates-to-sonoma)
 - Windows 11 23H2 hosted in VMWare Fusion
 
-**[OC Version 1.0.2](https://github.com/acidanthera/OpenCorePkg/releases/tag/1.0.2)**
+**[OC Version 1.0.3](https://github.com/acidanthera/OpenCorePkg/releases/tag/1.0.2)**
 
 ### What is working
 
 #### Almost everything:[[1]](#issues-with-macos-sequoia)
   
-- MacOS Sequoia 15.0.1
+- MacOS Sequoia 15.2
 - Audio  
 - DP and HDMI via dGPU  
 - Screen 1: 4k via DP  
@@ -45,28 +45,28 @@ After that I decided to switch to Intel by just replacing the mainboard and CPU.
     - 3x USB 3.2 Gen 1 on the back     
     - 3x with USB 2.0 personality (to connect WebCam via KVM switch to monitor and to connect IPad to the hackintosh). 
     - 2x USB-C (one back and front with up to 10 Gbps)
-- Continuity Camera with iPhone 15 Pro Max  
+- ~~Continuity Camera with iPhone 15 Pro Max~~  
 
 
 ### Used Kexts
 
 | **Kext**  | **Version**  | **Comment** |   
 |:----------|:----------|:--|   
-| [Lilu](https://github.com/acidanthera/Lilu/releases/tag/1.6.9)    | 1.6.9
-| [AppleALC](https://github.com/acidanthera/AppleALC/releases/tag/1.9.2)| 1.9.2
-| [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases/tag/1.6.8)    | 1.6.8
+| [Lilu](https://github.com/acidanthera/Lilu/releases/tag/1.7.0)    | 1.7.0
+| [AppleALC](https://github.com/acidanthera/AppleALC/releases/tag/1.9.3)| 1.9.3
+| [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases/tag/1.6.9)    | 1.6.9
 | [VirtualSMC](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.4)    | 1.3.4
 | [SMCProcessor](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.4)    | 1.3.4
 | [SMCSuperIO](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.4)    | 1.3.4
-| [CpuTopologyRebuild](https://github.com/b00t0x/CpuTopologyRebuild/releases/tag/1.1.1)    | 1.1.1
+| [CpuTopologyRebuild](https://github.com/b00t0x/CpuTopologyRebuild/releases/tag/2.0.0)    | 2.0.0
 | [CpuTscSync](https://github.com/acidanthera/CpuTscSync/releases/tag/1.1.1)    | 1.1.1
 | [NVMeFix](https://github.com/acidanthera/NVMeFix/releases/tag/1.1.2)    | 1.1.2
 | [LucyRTL8125Ethernet](https://www.insanelymac.com/forum/files/file/1004-lucyrtl8125ethernet/)    | 1.1.0
 | [RadeonSensor](https://github.com/aluveitie/RadeonSensor/releases/tag/0.3.3) | 0.3.3
 | [RestrictEvents](https://github.com/acidanthera/RestrictEvents/releases/tag/1.1.5) | 1.1.5
-| [CPUFriend](https://github.com/acidanthera/CPUFriend/releases/tag/1.2.8) | 1.2.8
+| [CPUFriend](https://github.com/acidanthera/CPUFriend/releases/tag/1.2.9) | 1.2.9
 | [AMFIPass](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Acidanthera/AMFIPass-v1.4.1-RELEASE.zip) | 1.4.1
-| [BlueToolFixup](https://github.com/acidanthera/BrcmPatchRAM/actions/runs/11143115875) | 2.6.9 | not released
+| [BlueToolFixup](https://github.com/acidanthera/BrcmPatchRAM/releases/2.6.9) | 2.6.9 | 
 | [IOSkywalkFamily](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Wifi/IOSkywalkFamily-v1.1.0.zip) | 1.1.0
 | [IO80211FamilyLegacy](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Wifi/IO80211FamilyLegacy-v1.0.0.zip) | 1.0.0
 | [AirPortBrcmNIC](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Wifi/IO80211FamilyLegacy-v1.0.0.zip) | 1.0.0
@@ -74,12 +74,15 @@ After that I decided to switch to Intel by just replacing the mainboard and CPU.
 ### Updates to Sonoma
 - AMFIPass version 1.4.1 taken from [here](https://github.com/dortania/OpenCore-Legacy-Patcher/tree/main/payloads/Kexts/Acidanthera)
 - IOSkyWalkFamily version 1.2.0 taken from [here](https://github.com/dortania/OpenCore-Legacy-Patcher/tree/main/payloads/Kexts/Wifi)
-- OpenCore Lagacy Patcher 2.0 taken from [here](https://github.com/dortania/OpenCore-Legacy-Patcher/actions/runs/10835044097)  
+- OpenCore Lagacy Patcher 2.2.0 taken from [here](https://github.com/dortania/OpenCore-Legacy-Patcher/releases/tag/2.2.0)  
 See [guide](https://github.com/perez987/Fenvi-wifi-back-on-macOS-Sonoma-by-OCLP/blob/main/README.md) to enable WiFi again
 
 #### Issues with MacOS Sequoia  
 There are (minor) issues:  
-  - bluetoothd process is crashing with:
+
+The bluetoothd crash still happens. Now, after adding the *acpi-wake-type* to the DeviceProperties section in the config.plist the system is running up to 8 days w/o any issue (at least once where I've not booted the system by intention the other time).
+
+bluetoothd process is crashing with:
       
 ````text  
   Exception Type:        EXC_GUARD  
@@ -104,10 +107,18 @@ Thread 1 Crashed:
 ```` 
 
 ~~- WiFi is not connection automatically w/o issue after boot~~~  
-~~- About This Mac shows Intel Xeon W CPU even using revcpuname patch.~~
+~~- About This Mac shows Intel Xeon W CPU even using revcpuname patch.~~  
+- Currently continue camera is broken. When enabling MacOS freezes and reboot is needed.
  
-### Current State
+### Current State  
 
+#### Benchmarks
+
+**Geekbench 6 with CpuTopologyRebuild.kext version 1.1.1**
+![Geekbench_1_1_1](./Benchmarks/Geekbench6_CpuTopologyRebuild_1_1_1.png "Geekbench6_1_1_1")!
+
+**Geekbench 6 with CpuTopologyRebuild.kext version 2.0.0**
+![Geekbench_2_0_0](./Benchmarks/Geekbench6_CpuTopologyRebuild_2_0_0.png "Geekbench6_2_0_0")!
 
 ### Outlook
 
