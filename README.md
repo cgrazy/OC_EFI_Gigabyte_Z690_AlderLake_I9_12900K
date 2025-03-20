@@ -20,13 +20,13 @@ After that I decided to switch to Intel by just replacing the mainboard and CPU.
   [Updates](#updates-to-sonoma)
 - Windows 11 23H2 hosted in VMWare Fusion
 
-**[OC Version 1.0.3](https://github.com/acidanthera/OpenCorePkg/releases/tag/1.0.2)**
+**[OC Version 1.0.4](https://github.com/acidanthera/OpenCorePkg/releases/tag/1.0.4)**
 
 ### What is working
 
 #### Almost everything:[[1]](#issues-with-macos-sequoia)
   
-- MacOS Sequoia 15.2
+- MacOS Sequoia 15.3.2
 - Audio  
 - DP and HDMI via dGPU  
 - Screen 1: 4k via DP  
@@ -53,18 +53,19 @@ After that I decided to switch to Intel by just replacing the mainboard and CPU.
 | **Kext**  | **Version**  | **Comment** |   
 |:----------|:----------|:--|   
 | [Lilu](https://github.com/acidanthera/Lilu/releases/tag/1.7.0)    | 1.7.0
-| [AppleALC](https://github.com/acidanthera/AppleALC/releases/tag/1.9.3)| 1.9.3
+| [AppleALC](https://github.com/acidanthera/AppleALC/releases/tag/1.9.4)| 1.9.4
 | [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases/tag/1.6.9)    | 1.6.9
 | [VirtualSMC](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.4)    | 1.3.4
 | [SMCProcessor](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.4)    | 1.3.4
 | [SMCSuperIO](https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.4)    | 1.3.4
-| [CpuTopologyRebuild](https://github.com/b00t0x/CpuTopologyRebuild/releases/tag/2.0.0)    | 2.0.0
+| [CpuTopologyRebuild](https://github.com/b00t0x/CpuTopologyRebuild/releases/tag/2.0.2)    | 2.0.2
 | [CpuTscSync](https://github.com/acidanthera/CpuTscSync/releases/tag/1.1.1)    | 1.1.1
 | [NVMeFix](https://github.com/acidanthera/NVMeFix/releases/tag/1.1.2)    | 1.1.2
 | [LucyRTL8125Ethernet](https://www.insanelymac.com/forum/files/file/1004-lucyrtl8125ethernet/)    | 1.1.0
 | [RadeonSensor](https://github.com/aluveitie/RadeonSensor/releases/tag/0.3.3) | 0.3.3
 | [RestrictEvents](https://github.com/acidanthera/RestrictEvents/releases/tag/1.1.5) | 1.1.5
 | [CPUFriend](https://github.com/acidanthera/CPUFriend/releases/tag/1.2.9) | 1.2.9
+| CPUFriendDataProvider | 
 | [AMFIPass](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Acidanthera/AMFIPass-v1.4.1-RELEASE.zip) | 1.4.1
 | [BlueToolFixup](https://github.com/acidanthera/BrcmPatchRAM/releases/2.6.9) | 2.6.9 | 
 | [IOSkywalkFamily](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/payloads/Kexts/Wifi/IOSkywalkFamily-v1.1.0.zip) | 1.1.0
